@@ -12,6 +12,12 @@ gl_singleQuesDupNum = 0
 gl_multiQuesDupNum = 0
 gl_singleQuesAndAnsAllLineNum = 0
 gl_multiQuesAndAnsAllLineNum = 0
+gl_fileInputPath            = os.getcwd() + "\\FileInput\\"
+gl_fileInputBakPath         = os.getcwd() + "\\FileInputBak\\"
+gl_fileFilterPath           = os.getcwd() + "\\FileFilter\\"
+gl_fileOutputPath           = os.getcwd() + "\\FileOutput\\"
+gl_fileOutputBakPath        = os.getcwd() + "\\FileOutputBak\\"
+gl_fileDistinctOutputPath   = os.getcwd() + "\\FileDistinctOutput\\"
 
 
 def Log(msg):
@@ -19,30 +25,28 @@ def Log(msg):
 
 
 def getFilterTextList():
-    currentPath = os.getcwd()
-    inputFilePath = currentPath + "/FileInput/"
-    inputFileBakPath = currentPath + "/FileInputBak/"
     outputFileList = []
     outputFlag = False
 
-    for inputFileName in os.listdir(inputFilePath):
+    for inputFileName in os.listdir(gl_fileInputPath):
         outputFlag = False
 
-        outputFileName = inputFileName[0:inputFileName.find("_")] + "_Filter" + inputFileName[inputFileName.rfind("_"):]
-        with open(inputFilePath + inputFileName, "r", encoding='UTF-8') as fr:
-            lines = fr.readlines()
-        
-        with open(currentPath + "/FileFilter/" + outputFileName, "w", encoding='UTF-8', newline='') as fw:
-            for line in lines:
-                if line.find('"code":200,"msg":"成功"') != -1:
-                    outputFlag = True
-                    fw.write(line)
-        
-        if outputFlag == True:
-            outputFileList.append(currentPath + "\\FileFilter\\" + outputFileName)
-            Log(outputFileName)
-        
-        shutil.move(inputFilePath + inputFileName, inputFileBakPath + inputFileName)
+        if inputFileName.find("选题_") != -1:
+            outputFileName = inputFileName[0:inputFileName.find("_")] + "_Filter" + inputFileName[inputFileName.rfind("_"):]
+            with open(gl_fileInputPath + inputFileName, "r", encoding='UTF-8') as fr:
+                lines = fr.readlines()
+            
+            with open(gl_fileFilterPath + outputFileName, "w", encoding='UTF-8', newline='') as fw:
+                for line in lines:
+                    if line.find('"code":200,"msg":"成功"') != -1:
+                        outputFlag = True
+                        fw.write(line)
+            
+            if outputFlag == True:
+                outputFileList.append(gl_fileFilterPath + outputFileName)
+                Log(outputFileName)
+            
+            shutil.move(gl_fileInputPath + inputFileName, gl_fileInputBakPath + inputFileName)
 
     if len(outputFileList) > 0:
         return outputFileList
@@ -127,7 +131,7 @@ def getGenerateQuesAndAnsToText(choiceFilterFile, choiceStrList):
         sys.exit(0)
 
     currentPath = os.getcwd()
-    with open(currentPath +"/FileOutput/" + outputChoiceFile, "w", encoding='UTF-8', newline='') as fw:
+    with open(gl_fileOutputPath + outputChoiceFile, "w", encoding='UTF-8', newline='') as fw:
         for choiceStr in choiceStrList:
             if choiceStr.find("question") != -1:
                 question = json.loads(choiceStr)
@@ -193,20 +197,16 @@ def getSingleChoiceFileDistinct():
     global gl_singleQuesDupNum
     global gl_singleQuesAndAnsAllLineNum
 
-    currentPath = os.getcwd()
-    inputFilePath = currentPath + "/FileOutput/"
-    inputFileBakPath = currentPath + "/FileOutputBak/"
-    outputFilePath = currentPath + "/FileDistinctOutput/"
-
     curr_time = datetime.datetime.now()
     timestamp = datetime.datetime.strftime(curr_time, '%m%d')
 
     Log("----------------单选题文件生成开始----------------")
 
-    for file in os.listdir(inputFilePath):
-        shutil.move(inputFilePath + file, inputFileBakPath + file)
+    for file in os.listdir(gl_fileOutputPath):
+        if file.find("选题_") != -1:
+            shutil.move(gl_fileOutputPath + file, gl_fileOutputBakPath + file)
 
-    with open(outputFilePath + "/" + "单选题_题目与答案_Distinct_" + timestamp + ".txt", "w", encoding='UTF-8', newline='') as fw:
+    with open(gl_fileDistinctOutputPath + "单选题_题目与答案_Distinct_" + timestamp + ".txt", "w", encoding='UTF-8', newline='') as fw:
         for key, listValue in gl_dictSingleChoice.items():
             if key.strip().find("题目:") != -1:
                 fw.write(key.strip())   # 题目和选项在同一行
@@ -226,11 +226,9 @@ def getSingleChoiceFileDistinct():
 
     if gl_singleQuesAndAnsAllLineNum == gl_singleQuesDupNum * 2 + len(gl_dictSingleChoice.keys()) + len(gl_dictSingleChoice.values()):
         Log("----------------单选题文件生成成功----------------")
+        Log("----------------单选题文件生成完成----------------")
     else:
         Log("----------------单选题文件生成失败----------------")
-
-    Log("----------------单选题文件生成完成----------------")
-
 
 
 def getMultiChoiceFileDistinct():
@@ -238,20 +236,16 @@ def getMultiChoiceFileDistinct():
     global gl_multiQuesDupNum
     global gl_multiQuesAndAnsAllLineNum
 
-    currentPath = os.getcwd()
-    inputFilePath = currentPath + "/FileOutput/"
-    inputFileBakPath = currentPath + "/FileOutputBak/"
-    outputFilePath = currentPath + "/FileDistinctOutput/"
-
     curr_time = datetime.datetime.now()
     timestamp = datetime.datetime.strftime(curr_time,'%m%d')
 
     Log("----------------多选题文件生成开始----------------")
 
-    for file in os.listdir(inputFilePath):
-        shutil.move(inputFilePath + file, inputFileBakPath + file)
+    for file in os.listdir(gl_fileOutputPath):
+        if file.find("选题_") != -1:
+            shutil.move(gl_fileOutputPath + file, gl_fileOutputBakPath + file)
 
-    with open(outputFilePath + "/" + "多选题_题目与答案_Distinct_" + timestamp + ".txt", "w", encoding='UTF-8', newline='') as fw:
+    with open(gl_fileDistinctOutputPath + "多选题_题目与答案_Distinct_" + timestamp + ".txt", "w", encoding='UTF-8', newline='') as fw:
         for key, listValue in gl_dictMultiChoice.items():
             if key.strip().find("题目:") != -1:
                 fw.write(key.strip())   # 题目和选项在同一行
@@ -271,10 +265,10 @@ def getMultiChoiceFileDistinct():
 
     if gl_multiQuesAndAnsAllLineNum == gl_multiQuesDupNum * 2 + len(gl_dictMultiChoice.keys()) + len(gl_dictMultiChoice.values()):
         Log("----------------多选题文件生成成功----------------")
+        Log("----------------多选题文件生成完成----------------")
     else:
         Log("----------------多选题文件生成失败----------------")
 
-    Log("----------------多选题文件生成完成----------------")
 
 """   
 def getMultiChoiceFileDistinct():
@@ -377,6 +371,8 @@ def test1():
 
     print(gl_dictSingleChoice.keys(), gl_dictSingleChoice.values())
 
+    print(gl_fileInputPath)
+
 
 def main():
     singleChoiceFlag = False
@@ -404,10 +400,12 @@ def main():
         # 单选题去重
         getSingleChoiceFileDistinct()
     
+    Log("*******************************************************************************")
+    
     if multiChoiceFlag == True:
         # 多选题去重
         getMultiChoiceFileDistinct()
-
+    
 
 
     
