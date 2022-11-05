@@ -1,0 +1,2529 @@
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=1&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:06 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1468
+
+{"code":200,"msg":"成功","data":{"total":38,"question":{"id":1623,"name":"售前工作中，关于报价清单配置与审核下列哪项不正确","type":1,"sid":86,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":7,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":108425,"name":"A","value":"若项目售前没有参与具体需求沟通时，项目销售所反馈的项目需求必须真实有效和全面，须为报价清单的配置提供依据","qId":1623,"isTrue":null,"sort":0,"pic":""},{"id":108429,"name":"E","value":"以上全不对","qId":1623,"isTrue":null,"sort":0,"pic":""},{"id":108427,"name":"C","value":"报价清单的产品配置完整性、准确性和合理性，项目售前为第一责任人；项目售前作为项目的负责人，要对最终输出给客户的报价负责，并充分考虑项目运作对报价的影响","qId":1623,"isTrue":null,"sort":0,"pic":""},{"id":108426,"name":"B","value":"项目售前针对项目具体需求完成报价清单的配置和标准价格的核对，完成后的报价清单需发给项目销售的直属上级和省领导审核，同时由项目销售跟进审核进度与结果","qId":1623,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":18217,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"售前体系","keywordTwo":"项目支撑","keywordThree":"协作","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":1623,"moduleId":1,"functionId":3,"answer":"108425","isRight":1,"notAnswerIds":[108426,108427,108429],"answerIds":[108425],"sortIds":[108425,108429,108427,108426],"userTypeMd5":"9835c99bUb0048958b2347900ace13fcf8edb5a1c3","timestamp":1667517041902}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:12 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 795
+
+{"code":200,"msg":"成功","data":[{"id":108425,"isTrue":0,"value":"若项目售前没有参与具体需求沟通时，项目销售所反馈的项目需求必须真实有效和全面，须为报价清单的配置提供依据"},{"id":108429,"isTrue":0,"value":"以上全不对"},{"id":108427,"isTrue":1,"value":"报价清单的产品配置完整性、准确性和合理性，项目售前为第一责任人；项目售前作为项目的负责人，要对最终输出给客户的报价负责，并充分考虑项目运作对报价的影响"},{"id":108426,"isTrue":0,"value":"项目售前针对项目具体需求完成报价清单的配置和标准价格的核对，完成后的报价清单需发给项目销售的直属上级和省领导审核，同时由项目销售跟进审核进度与结果"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=2&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:13 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1366
+
+{"code":200,"msg":"成功","data":{"total":38,"question":{"id":1963,"name":"A会场有一台极光5视联网终端，B会场有一台极光视联网终端，如果两台终端需要进行正常可视通话，两台视联网终端主要参数最佳设置是以下哪项？","type":1,"sid":28,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":7,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":109864,"name":"B","value":"两个会场终端的编码格式都设置为H.264\n分辨率都设置为1080@30fps","qId":1963,"isTrue":null,"sort":0,"pic":""},{"id":109863,"name":"A","value":"A会场终端编码格式设置为H.265，分辨率设置为1080@30fps；B会场终端编码格式设置为H.264，分辨率设置为1080@30fps","qId":1963,"isTrue":null,"sort":0,"pic":""},{"id":109867,"name":"E","value":"以上都不对","qId":1963,"isTrue":null,"sort":0,"pic":""},{"id":109866,"name":"D","value":"A会场终端编码格式设置为H.264，分辨率设置为1080@30fps；B会场终端编码格式设置为H.265，分辨率设置为1080@30fps","qId":1963,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":14733,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"产品知识","keywordTwo":"场景应用","keywordThree":"终端设置","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":1963,"moduleId":1,"functionId":3,"answer":"109866","isRight":1,"notAnswerIds":[109863,109864,109867],"answerIds":[109866],"sortIds":[109864,109863,109867,109866],"userTypeMd5":"8048jf11Ic575ea10efae712f5acfb3ac44ea00873","timestamp":1667517044761}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:15 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 564
+
+{"code":200,"msg":"成功","data":[{"id":109864,"isTrue":1,"value":"两个会场终端的编码格式都设置为H.264\n分辨率都设置为1080@30fps"},{"id":109863,"isTrue":0,"value":"A会场终端编码格式设置为H.265，分辨率设置为1080@30fps；B会场终端编码格式设置为H.264，分辨率设置为1080@30fps"},{"id":109867,"isTrue":0,"value":"以上都不对"},{"id":109866,"isTrue":0,"value":"A会场终端编码格式设置为H.264，分辨率设置为1080@30fps；B会场终端编码格式设置为H.265，分辨率设置为1080@30fps"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=3&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:16 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 1302
+
+{"code":200,"msg":"成功","data":{"total":38,"question":{"id":2195,"name":"关于非销项目资产转为销售项目中设备，以下说法正确的是（）？","type":1,"sid":57,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":114012,"name":"C","value":"仅在OA中发起《设备类型调整单》即可","qId":2195,"isTrue":null,"sort":0,"pic":""},{"id":114011,"name":"B","value":"首先在OA中发起《设备类型调整单》，OA流程审批结束后，再操作资管系统，避免因为OA单发起存在问题还需要在资管系统中撤回调整的现象发生","qId":2195,"isTrue":null,"sort":0,"pic":""},{"id":114010,"name":"A","value":"首先在OA中发起《设备类型调整单》，发起后就可以操作资管系统","qId":2195,"isTrue":null,"sort":0,"pic":""},{"id":114014,"name":"E","value":"先在资管系统中点击设备类型调整按钮，调整后在OA中发起《设备类型调整单》流程","qId":2195,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":3999,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"非销项目","keywordTwo":"销售项目","keywordThree":"设备","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":2195,"moduleId":1,"functionId":3,"answer":"114014","isRight":1,"notAnswerIds":[114010,114011,114012],"answerIds":[114014],"sortIds":[114012,114011,114010,114014],"userTypeMd5":"6861add8Jcc7eef780f9f3c1d618d3e50194f44886","timestamp":1667517048239}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:18 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 615
+
+{"code":200,"msg":"成功","data":[{"id":114012,"isTrue":0,"value":"仅在OA中发起《设备类型调整单》即可"},{"id":114011,"isTrue":1,"value":"首先在OA中发起《设备类型调整单》，OA流程审批结束后，再操作资管系统，避免因为OA单发起存在问题还需要在资管系统中撤回调整的现象发生"},{"id":114010,"isTrue":0,"value":"首先在OA中发起《设备类型调整单》，发起后就可以操作资管系统"},{"id":114014,"isTrue":0,"value":"先在资管系统中点击设备类型调整按钮，调整后在OA中发起《设备类型调整单》流程"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=4&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:19 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1218
+
+{"code":200,"msg":"成功","data":{"total":38,"question":{"id":2272,"name":"以下关于终端开通和变更的说法中不正确的是？","type":1,"sid":57,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":123499,"name":"C","value":"终端开通时，如未签署表1，则开通时效为临时24小时。","qId":2272,"isTrue":null,"sort":0,"pic":""},{"id":123498,"name":"B","value":"终端业务变更申请单，如果变更后项目是委托保管和试点项目，开通时效可以超过项目到期时间。","qId":2272,"isTrue":null,"sort":0,"pic":""},{"id":123501,"name":"E","value":"《终端开通申请单》中设备用途字段选择需要同项目类型保持一致。","qId":2272,"isTrue":null,"sort":0,"pic":""},{"id":123497,"name":"A","value":"非销项目终端入网，要求开通时效不可超过项目结束时间。","qId":2272,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":3857,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"终端开通","keywordTwo":"业务变更","keywordThree":"终端入网","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":2272,"moduleId":1,"functionId":3,"answer":"123497","isRight":1,"notAnswerIds":[123498,123499,123501],"answerIds":[123497],"sortIds":[123499,123498,123501,123497],"userTypeMd5":"a3e0ba98D26d118cbe68b9c70f682e5a5b586684fc","timestamp":1667517051252}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:21 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 549
+
+{"code":200,"msg":"成功","data":[{"id":123499,"isTrue":0,"value":"终端开通时，如未签署表1，则开通时效为临时24小时。"},{"id":123498,"isTrue":1,"value":"终端业务变更申请单，如果变更后项目是委托保管和试点项目，开通时效可以超过项目到期时间。"},{"id":123501,"isTrue":0,"value":"《终端开通申请单》中设备用途字段选择需要同项目类型保持一致。"},{"id":123497,"isTrue":0,"value":"非销项目终端入网，要求开通时效不可超过项目结束时间。"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=5&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:22 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 1510
+
+{"code":200,"msg":"成功","data":{"total":38,"question":{"id":2363,"name":"以下对于设备返修情况描述正确的是（）","type":1,"sid":51,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":123531,"name":"E","value":"工程师接到系统派单后，联系用户具体上门时间，按要求时间上门经各项检查后属于硬件故障需返修的，工程师使用备件替换，将故障维修设备按要求进行打包邮寄对应地址，同时系统提交返修单记录跟踪信息","qId":2363,"isTrue":null,"sort":0,"pic":""},{"id":123527,"name":"A","value":"工程师接到系统派单联系用户，用户告知设备故障，工程师听后告知用户设备返修地址，让用户自行邮寄","qId":2363,"isTrue":null,"sort":0,"pic":""},{"id":123530,"name":"D","value":"工程师接到系统派单后，联系用户具体上门时间，上门后直接将用户设备拆下后打包邮寄维修站","qId":2363,"isTrue":null,"sort":0,"pic":""},{"id":123528,"name":"B","value":"工程师接到系统派单后，用户告知设备故障，工程师将备机邮寄给客户并告知客户返修地址，自行邮寄。","qId":2363,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":1959,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"流程","keywordTwo":"制度","keywordThree":"设备返修","keywordFour":"上门","keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":2363,"moduleId":1,"functionId":3,"answer":"123530","isRight":1,"notAnswerIds":[123527,123528,123531],"answerIds":[123530],"sortIds":[123531,123527,123530,123528],"userTypeMd5":"a613ee28M93d9518e4c7827fbc8d291ceb2972bb0e","timestamp":1667517054608}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:24 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 858
+
+{"code":200,"msg":"成功","data":[{"id":123531,"isTrue":1,"value":"工程师接到系统派单后，联系用户具体上门时间，按要求时间上门经各项检查后属于硬件故障需返修的，工程师使用备件替换，将故障维修设备按要求进行打包邮寄对应地址，同时系统提交返修单记录跟踪信息"},{"id":123527,"isTrue":0,"value":"工程师接到系统派单联系用户，用户告知设备故障，工程师听后告知用户设备返修地址，让用户自行邮寄"},{"id":123530,"isTrue":0,"value":"工程师接到系统派单后，联系用户具体上门时间，上门后直接将用户设备拆下后打包邮寄维修站"},{"id":123528,"isTrue":0,"value":"工程师接到系统派单后，用户告知设备故障，工程师将备机邮寄给客户并告知客户返修地址，自行邮寄。"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=6&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:26 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1302
+
+{"code":200,"msg":"成功","data":{"total":38,"question":{"id":2365,"name":"客户设备人为摔坏，以下操作正确的是（）","type":1,"sid":51,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":115383,"name":"D","value":"判断设备人为摔坏的，需要与用户沟通讲明，人为摔坏的不在保修范围内，需要付费维修，具体费用待进一步检测后告知用户，如用户同意付费维修进行邮寄返修","qId":2365,"isTrue":null,"sort":0,"pic":""},{"id":115381,"name":"B","value":"判断设备人为摔坏的，需要与用户沟通讲明，人为摔坏的不在保修范围内，需要付费维修后邮寄返修站","qId":2365,"isTrue":null,"sort":0,"pic":""},{"id":115384,"name":"E","value":"判断设备硬件故障直接邮寄返修","qId":2365,"isTrue":null,"sort":0,"pic":""},{"id":115380,"name":"A","value":"判断设备人为摔坏的，告知用户需要付费维修后进行邮寄返修","qId":2365,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":1961,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"设备返修","keywordTwo":"流程","keywordThree":"制度","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":2365,"moduleId":1,"functionId":3,"answer":"115380","isRight":1,"notAnswerIds":[115381,115383,115384],"answerIds":[115380],"sortIds":[115383,115381,115384,115380],"userTypeMd5":"8116b575U8ce797d2b4c6865d5624a945c7b704728","timestamp":1667517057746}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:28 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 651
+
+{"code":200,"msg":"成功","data":[{"id":115383,"isTrue":1,"value":"判断设备人为摔坏的，需要与用户沟通讲明，人为摔坏的不在保修范围内，需要付费维修，具体费用待进一步检测后告知用户，如用户同意付费维修进行邮寄返修"},{"id":115381,"isTrue":0,"value":"判断设备人为摔坏的，需要与用户沟通讲明，人为摔坏的不在保修范围内，需要付费维修后邮寄返修站"},{"id":115384,"isTrue":0,"value":"判断设备硬件故障直接邮寄返修"},{"id":115380,"isTrue":0,"value":"判断设备人为摔坏的，告知用户需要付费维修后进行邮寄返修"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=7&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:29 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1449
+
+{"code":200,"msg":"成功","data":{"total":38,"question":{"id":2373,"name":"下面关于质保期，属于在保范围说法正确的是（）","type":1,"sid":51,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":121430,"name":"D","value":"用户2011年11月1日签收设备，开始使用时间为2011年11月12日，保质期1年，保修起止日期为自用户签收之日起算，用户2012年11月2日报障检测设备故障","qId":2373,"isTrue":null,"sort":0,"pic":""},{"id":121429,"name":"C","value":"用户2011年11月1日签收设备，开始使用时间为2011年11月12日，保质期1年，保修起止日期为自用户开始使用起算，用户2012年12月1日报障检测设备故障","qId":2373,"isTrue":null,"sort":0,"pic":""},{"id":121431,"name":"E","value":"公司设备维保期统一为3年","qId":2373,"isTrue":null,"sort":0,"pic":""},{"id":121427,"name":"A","value":"用户2011年11月1日签收设备，开始使用时间为2011年11月12日，保质期1年，保修起止日期为自用户开始使用起算，用户2012年11月10日报障检测设备故障","qId":2373,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":1796,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"售后","keywordTwo":"服务","keywordThree":"设备","keywordFour":"维保期","keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":2373,"moduleId":1,"functionId":3,"answer":"121431","isRight":1,"notAnswerIds":[121427,121429,121430],"answerIds":[121431],"sortIds":[121430,121429,121431,121427],"userTypeMd5":"0148l802G280ecd47b80cbab601db27a0fc250dba2","timestamp":1667517060831}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:31 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 788
+
+{"code":200,"msg":"成功","data":[{"id":121430,"isTrue":0,"value":"用户2011年11月1日签收设备，开始使用时间为2011年11月12日，保质期1年，保修起止日期为自用户签收之日起算，用户2012年11月2日报障检测设备故障"},{"id":121429,"isTrue":0,"value":"用户2011年11月1日签收设备，开始使用时间为2011年11月12日，保质期1年，保修起止日期为自用户开始使用起算，用户2012年12月1日报障检测设备故障"},{"id":121431,"isTrue":0,"value":"公司设备维保期统一为3年"},{"id":121427,"isTrue":1,"value":"用户2011年11月1日签收设备，开始使用时间为2011年11月12日，保质期1年，保修起止日期为自用户开始使用起算，用户2012年11月10日报障检测设备故障"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=8&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:32 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1398
+
+{"code":200,"msg":"成功","data":{"total":38,"question":{"id":2375,"name":"关于客户设备人为摔坏的情况，以下操作正确的是（）","type":1,"sid":51,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":115527,"name":"C","value":"判断设备人为摔坏的，为了减少维修时效，可以先行邮寄维修中心维修，维修好后再与用户沟通费用问题","qId":2375,"isTrue":null,"sort":0,"pic":""},{"id":115525,"name":"A","value":"判断设备人为摔坏的，告知用户付费后进行邮寄返修","qId":2375,"isTrue":null,"sort":0,"pic":""},{"id":115528,"name":"D","value":"判断设备人为摔坏的，需要与用户沟通讲明，人为摔坏的不在保修范围内，需要付费维修，具体费用待进一步检测后告知用户，如用户同意付费维修再邮寄维修中心","qId":2375,"isTrue":null,"sort":0,"pic":""},{"id":115526,"name":"B","value":"判断设备人为摔坏的，需要与用户沟通讲明，人为摔坏的不在保修范围内，需付费后邮寄返修中心","qId":2375,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":1798,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"客户","keywordTwo":"设备","keywordThree":"人为损坏","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":2375,"moduleId":1,"functionId":3,"answer":"115526","isRight":1,"notAnswerIds":[115525,115527,115528],"answerIds":[115526],"sortIds":[115527,115525,115528,115526],"userTypeMd5":"73e5g388Wb62ca1d0df7307f8eb00296ac72ada4ee","timestamp":1667517063887}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:34 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 732
+
+{"code":200,"msg":"成功","data":[{"id":115527,"isTrue":0,"value":"判断设备人为摔坏的，为了减少维修时效，可以先行邮寄维修中心维修，维修好后再与用户沟通费用问题"},{"id":115525,"isTrue":0,"value":"判断设备人为摔坏的，告知用户付费后进行邮寄返修"},{"id":115528,"isTrue":1,"value":"判断设备人为摔坏的，需要与用户沟通讲明，人为摔坏的不在保修范围内，需要付费维修，具体费用待进一步检测后告知用户，如用户同意付费维修再邮寄维修中心"},{"id":115526,"isTrue":0,"value":"判断设备人为摔坏的，需要与用户沟通讲明，人为摔坏的不在保修范围内，需付费后邮寄返修中心"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=9&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:35 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1602
+
+{"code":200,"msg":"成功","data":{"total":38,"question":{"id":3002,"name":"跟你一起合作项目的小张最近工作懈怠，经常不按时交东西，耽误工期。当你找他要东西的时候，他却跟你说：\"抱歉，最近我在和你的合作上有点拖沓。你也许不知道，这两个星期我家里出了很大的问题，需要我去解决。工作上项目又太多，好几个项目节点都要在下周完成，我觉得那些排项目计划的人真是太没脑子了。\"如果把关注点放到小张身上，你听到了什么？","type":1,"sid":67,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":66,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":107735,"name":"E","value":"“以后我得和小张保持距离。”","qId":3002,"isTrue":null,"sort":0,"pic":""},{"id":107732,"name":"B","value":"“小张对别人的怨气挺大的，我该怎么问他要东西呢”","qId":3002,"isTrue":null,"sort":0,"pic":""},{"id":107734,"name":"D","value":"“小张面对很多困难，要办法帮他平衡工作和家庭的问题。”","qId":3002,"isTrue":null,"sort":0,"pic":""},{"id":107733,"name":"C","value":"“因为工作和家庭双重问题，小张感到焦虑、压力很大，他愿意跟我分享这些，对我是很信任的。”","qId":3002,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":19713,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"管理理论","keywordTwo":"解决冲突","keywordThree":"沟通协作","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":3002,"moduleId":1,"functionId":3,"answer":"107734","isRight":1,"notAnswerIds":[107732,107733,107735],"answerIds":[107734],"sortIds":[107735,107732,107734,107733],"userTypeMd5":"92fdwd7aO73ec10fc9dee23cea32f1c377c5481da1","timestamp":1667517067968}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:38 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 507
+
+{"code":200,"msg":"成功","data":[{"id":107735,"isTrue":0,"value":"“以后我得和小张保持距离。”"},{"id":107732,"isTrue":0,"value":"“小张对别人的怨气挺大的，我该怎么问他要东西呢”"},{"id":107734,"isTrue":0,"value":"“小张面对很多困难，要办法帮他平衡工作和家庭的问题。”"},{"id":107733,"isTrue":1,"value":"“因为工作和家庭双重问题，小张感到焦虑、压力很大，他愿意跟我分享这些，对我是很信任的。”"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=10&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:39 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1480
+
+{"code":200,"msg":"成功","data":{"total":38,"question":{"id":4993,"name":"保密工作是我们的一项重要工作，保密工作的好坏直接关系到国家和企业的利益，所以我们应提高保密意识，认真做好保密工作，保证国家和企业的利益不受损害。以下做法不符合保密要求的是？","type":1,"sid":53,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":124805,"name":"B","value":"为了工作方便，通过互联网直接传输公司涉密文件","qId":4993,"isTrue":null,"sort":0,"pic":""},{"id":124808,"name":"E","value":"非信任网络不打开公司机密文件","qId":4993,"isTrue":null,"sort":0,"pic":""},{"id":124806,"name":"C","value":"对需要送出单位维修的设备、拆除或者改为他用的设备及需要报废的设备，必须对其设备有敏感（内部以上）信息的存储部件进行物理销毁或安全地覆盖，并进行维修、报废登记","qId":4993,"isTrue":null,"sort":0,"pic":""},{"id":124804,"name":"A","value":"不在私人交往和任何通信中泄露公司秘密，不在公共场所谈论公司秘密","qId":4993,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":27404,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"保密工作","keywordTwo":"安全防范","keywordThree":"安全意识","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":4993,"moduleId":1,"functionId":3,"answer":"124806","isRight":1,"notAnswerIds":[124804,124805,124808],"answerIds":[124806],"sortIds":[124805,124808,124806,124804],"userTypeMd5":"4e0aa1d4Hc3a2147d859e2264d5c65ad221de73de7","timestamp":1667517071773}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:42 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 615
+
+{"code":200,"msg":"成功","data":[{"id":124805,"isTrue":1,"value":"为了工作方便，通过互联网直接传输公司涉密文件"},{"id":124808,"isTrue":0,"value":"非信任网络不打开公司机密文件"},{"id":124806,"isTrue":0,"value":"对需要送出单位维修的设备、拆除或者改为他用的设备及需要报废的设备，必须对其设备有敏感（内部以上）信息的存储部件进行物理销毁或安全地覆盖，并进行维修、报废登记"},{"id":124804,"isTrue":0,"value":"不在私人交往和任何通信中泄露公司秘密，不在公共场所谈论公司秘密"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=11&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:43 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1393
+
+{"code":200,"msg":"成功","data":{"total":38,"question":{"id":5269,"name":"在709项目中要使用演示或测试条款时，最优推荐使用的描述是（）？","type":1,"sid":46,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":7,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":126307,"name":"B","value":"在确定招标人后，招标人须在中标后7日内搭建试运行平台进行演示或测试。","qId":5269,"isTrue":null,"sort":0,"pic":""},{"id":126306,"name":"A","value":"在确定中标候选人后，候选人须在中标后7日内搭建试运行平台进行演示或测试满足56.1、56.2的功能，并能实现与ZZW平台的级联互通、中央点调、灵活调度。","qId":5269,"isTrue":null,"sort":0,"pic":""},{"id":126310,"name":"E","value":"在确定中标候选人后，候选人须搭建试运行平台进行演示或测试。","qId":5269,"isTrue":null,"sort":0,"pic":""},{"id":126309,"name":"D","value":"在确定中标候选人后，候选人须在中标后7日内搭建试运行平台进行演示或测试满足56.1、56.2的功能。","qId":5269,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":38227,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"PS必考","keywordTwo":"中标条件","keywordThree":"招投标","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":5269,"moduleId":1,"functionId":3,"answer":"126306","isRight":1,"notAnswerIds":[126307,126309,126310],"answerIds":[126306],"sortIds":[126307,126306,126310,126309],"userTypeMd5":"2a05b0b2G8d4af9df0a4446ef5d517710149590acb","timestamp":1667517074965}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:45 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 703
+
+{"code":200,"msg":"成功","data":[{"id":126307,"isTrue":0,"value":"在确定招标人后，招标人须在中标后7日内搭建试运行平台进行演示或测试。"},{"id":126306,"isTrue":1,"value":"在确定中标候选人后，候选人须在中标后7日内搭建试运行平台进行演示或测试满足56.1、56.2的功能，并能实现与ZZW平台的级联互通、中央点调、灵活调度。"},{"id":126310,"isTrue":0,"value":"在确定中标候选人后，候选人须搭建试运行平台进行演示或测试。"},{"id":126309,"isTrue":0,"value":"在确定中标候选人后，候选人须在中标后7日内搭建试运行平台进行演示或测试满足56.1、56.2的功能。"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=12&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:46 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 1342
+
+{"code":200,"msg":"成功","data":{"total":38,"question":{"id":5317,"name":"对于风险含义理解不正确的是（）","type":1,"sid":130,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":115,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":126537,"name":"D","value":"风险的来源是未来事项发生的不确定性，认识风险需要对各种可能影响战略、经营目标的事项及其发生的可能性进行识别、评估。","qId":5317,"isTrue":null,"sort":0,"pic":""},{"id":126535,"name":"B","value":"可以把负面的风险称为危险，正面的风险称为机会。","qId":5317,"isTrue":null,"sort":0,"pic":""},{"id":126536,"name":"C","value":"风险总是与机遇并存，它既可能导致实际结果向好的方向发展，也可能导致实际结果向不好的方向发展","qId":5317,"isTrue":null,"sort":0,"pic":""},{"id":126538,"name":"E","value":"风险可能带来竞争失败、经营中断、法律诉讼、资产损失、决策失误等负面影响，因此风险一定意味着损失。","qId":5317,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":38474,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"风险","keywordTwo":"风险管理","keywordThree":"机会","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":5317,"moduleId":1,"functionId":3,"answer":"126537","isRight":1,"notAnswerIds":[126535,126536,126538],"answerIds":[126537],"sortIds":[126537,126535,126536,126538],"userTypeMd5":"aa12o79fEe0056e60f594c0f51b20b97d5360555af","timestamp":1667517079411}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:49 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 699
+
+{"code":200,"msg":"成功","data":[{"id":126537,"isTrue":0,"value":"风险的来源是未来事项发生的不确定性，认识风险需要对各种可能影响战略、经营目标的事项及其发生的可能性进行识别、评估。"},{"id":126535,"isTrue":0,"value":"可以把负面的风险称为危险，正面的风险称为机会。"},{"id":126536,"isTrue":0,"value":"风险总是与机遇并存，它既可能导致实际结果向好的方向发展，也可能导致实际结果向不好的方向发展"},{"id":126538,"isTrue":1,"value":"风险可能带来竞争失败、经营中断、法律诉讼、资产损失、决策失误等负面影响，因此风险一定意味着损失。"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=13&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:50 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1259
+
+{"code":200,"msg":"成功","data":{"total":38,"question":{"id":5396,"name":"视联医疗解决方案架构采用顶层设计，以统一架构、统一标准建设“四位一体化”一站式解决方案，其中的四位一体化指的是？ ","type":1,"sid":170,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":35,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":126777,"name":"A","value":"“底层通信协议+软件平台+硬件终端+医学卫生专网”","qId":5396,"isTrue":null,"sort":0,"pic":""},{"id":126779,"name":"C","value":"“底层通信协议+软件平台+硬件终端+全国顶级医疗资源”","qId":5396,"isTrue":null,"sort":0,"pic":""},{"id":126778,"name":"B","value":"“软件平台+硬件终端+医学卫生专网+运营服务”","qId":5396,"isTrue":null,"sort":0,"pic":""},{"id":126781,"name":"E","value":"“底层通信协议+软件平台+硬件终端+医学卫生专网+百万终端用户接入”","qId":5396,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":36812,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"远程医疗","keywordTwo":"医疗运营","keywordThree":"医疗服务","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":5396,"moduleId":1,"functionId":3,"answer":"126781","isRight":1,"notAnswerIds":[126777,126778,126779],"answerIds":[126781],"sortIds":[126777,126779,126778,126781],"userTypeMd5":"9cf6l07cRe5420789fbe9832145f19d692adc29e7e","timestamp":1667517082379}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:52 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 481
+
+{"code":200,"msg":"成功","data":[{"id":126777,"isTrue":0,"value":"“底层通信协议+软件平台+硬件终端+医学卫生专网”"},{"id":126779,"isTrue":0,"value":"“底层通信协议+软件平台+硬件终端+全国顶级医疗资源”"},{"id":126778,"isTrue":1,"value":"“软件平台+硬件终端+医学卫生专网+运营服务”"},{"id":126781,"isTrue":0,"value":"“底层通信协议+软件平台+硬件终端+医学卫生专网+百万终端用户接入”"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=14&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:53 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1176
+
+{"code":200,"msg":"成功","data":{"total":38,"question":{"id":5502,"name":"如果推流地址是（rtmp://pubsec.mudu.tv/watch/tex32f?auth_key=2082733261-0-0-e3598f92c1a0051ab4337ad9befa431f），请问用OBS推流的话，串流密钥是什么？","type":1,"sid":49,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":127357,"name":"B","value":"tex32f?auth_key=2082733261-0-0-e3598f92c1a0051ab4337ad9befa431f","qId":5502,"isTrue":null,"sort":0,"pic":""},{"id":127359,"name":"D","value":"key=2082733261-0-0-e3598f92c1a0051ab4337ad9befa431f","qId":5502,"isTrue":null,"sort":0,"pic":""},{"id":127358,"name":"C","value":"rtmp://pubsec.mudu.tv/watch","qId":5502,"isTrue":null,"sort":0,"pic":""},{"id":127356,"name":"A","value":"rtmp://pubsec.mudu.tv/watch/tex32f?auth_key=2082733261-0-0-e3598f92c1a0051ab4337ad9befa431f","qId":5502,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":40003,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"推流地址","keywordTwo":"串流","keywordThree":"OBS","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjFiNmM2ODViLWIxMjAtNDViYS1iMzAwLTM3MGEzYjFkYTlhMCJ9.evvCdTq6IBRJkDrCxFrPYT7r2qRhnL3-1q59ID-Eoldm_xub3aXXOB2fxRj6ylOU9nl2XYAdMwAL7r4kAqPxxA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":5502,"moduleId":1,"functionId":3,"answer":"127356","isRight":1,"notAnswerIds":[127357,127358,127359],"answerIds":[127356],"sortIds":[127357,127359,127358,127356],"userTypeMd5":"e937vc55Xf1d43fd555f208165d175b813f4e331d1","timestamp":1667517085504}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:08:55 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 412
+
+{"code":200,"msg":"成功","data":[{"id":127357,"isTrue":1,"value":"tex32f?auth_key=2082733261-0-0-e3598f92c1a0051ab4337ad9befa431f"},{"id":127359,"isTrue":0,"value":"key=2082733261-0-0-e3598f92c1a0051ab4337ad9befa431f"},{"id":127358,"isTrue":0,"value":"rtmp://pubsec.mudu.tv/watch"},{"id":127356,"isTrue":0,"value":"rtmp://pubsec.mudu.tv/watch/tex32f?auth_key=2082733261-0-0-e3598f92c1a0051ab4337ad9befa431f"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=1&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:11:55 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 1072
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":5824,"name":"pamir控会软件使用VT模式开会，需要如何操作？","type":1,"sid":49,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":129178,"name":"D","value":"config.xml文件修改 <model>0</model>，改0为1","qId":5824,"isTrue":null,"sort":0,"pic":""},{"id":129179,"name":"E","value":"大网推荐的pamir版本不需要修改，直接可以登录","qId":5824,"isTrue":null,"sort":0,"pic":""},{"id":129177,"name":"C","value":"config.xml文件修改 <terminalEnabled>0</terminalEnabled>，改0为1","qId":5824,"isTrue":null,"sort":0,"pic":""},{"id":129176,"name":"B","value":"config.xml文件修改<v2vEnabled>1</v2vEnabled>，1改为0","qId":5824,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":41530,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"演示保障","keywordTwo":"pamir","keywordThree":"VT","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":5824,"moduleId":1,"functionId":3,"answer":"129179","isRight":1,"notAnswerIds":[129176,129177,129178],"answerIds":[129179],"sortIds":[129178,129179,129177,129176],"userTypeMd5":"7e5fffaaE7cc03727de04df3a9ccc9564ac781963b","timestamp":1667517268984}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:11:59 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 421
+
+{"code":200,"msg":"成功","data":[{"id":129178,"isTrue":0,"value":"config.xml文件修改 <model>0</model>，改0为1"},{"id":129179,"isTrue":0,"value":"大网推荐的pamir版本不需要修改，直接可以登录"},{"id":129177,"isTrue":1,"value":"config.xml文件修改 <terminalEnabled>0</terminalEnabled>，改0为1"},{"id":129176,"isTrue":0,"value":"config.xml文件修改<v2vEnabled>1</v2vEnabled>，1改为0"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=2&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:00 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1384
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":5904,"name":" 项目经理加入一个大型全球项目，其中包含几位来自不同国家的人员，在规划阶段即将结束时，项目经理为项目启动大会准备了一份会议议程，其中一个议程事项是获得几个关键项目要素的一致性，在项目启动大会之前，项目经理应该怎么做？","type":1,"sid":57,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":129556,"name":"B","value":"详细审查项目目标，以确保所有参与者都了解项目目标","qId":5904,"isTrue":null,"sort":0,"pic":""},{"id":129558,"name":"D","value":"审查最终的工作分解结构(WBS)，以便所有参与者都可以在会议中分配到任务","qId":5904,"isTrue":null,"sort":0,"pic":""},{"id":129555,"name":"A","value":"制定相关方登记册，概述每位相关方的责任 ","qId":5904,"isTrue":null,"sort":0,"pic":""},{"id":129559,"name":"E","value":"和发起人讨论需要那些人参加","qId":5904,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":41941,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"启动大会","keywordTwo":"会议议程","keywordThree":"规划阶段","keywordFour":"将结束","keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":5904,"moduleId":1,"functionId":3,"answer":"129558","isRight":1,"notAnswerIds":[129555,129556,129559],"answerIds":[129558],"sortIds":[129556,129558,129555,129559],"userTypeMd5":"a577ebbdK1b4d7629e39c661ff9031815d41bc5fd0","timestamp":1667517272766}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:03 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 447
+
+{"code":200,"msg":"成功","data":[{"id":129556,"isTrue":1,"value":"详细审查项目目标，以确保所有参与者都了解项目目标"},{"id":129558,"isTrue":0,"value":"审查最终的工作分解结构(WBS)，以便所有参与者都可以在会议中分配到任务"},{"id":129555,"isTrue":0,"value":"制定相关方登记册，概述每位相关方的责任 "},{"id":129559,"isTrue":0,"value":"和发起人讨论需要那些人参加"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=3&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:05 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 1432
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":6769,"name":"在推进全国综治视联网的建设进程中，经常遇到使用极光视联网终端作为监播终端使用，项目支持中，项目销售意图是在配置清单中不体现监播功能、描述和字样，以下说法正确的是（）","type":1,"sid":75,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":7,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":133673,"name":"A","value":"按照公司要求，重新定义产品名称和型号，列入产品配置清单，输出给销售即可","qId":6769,"isTrue":null,"sort":0,"pic":""},{"id":133676,"name":"D","value":"按照公司要求，监播终端的相关功能和描述，可由八路解码电视墙服务代替","qId":6769,"isTrue":null,"sort":0,"pic":""},{"id":133674,"name":"B","value":"按照公司要求，产品清单模板中不存在监播类型终端，可进行外采","qId":6769,"isTrue":null,"sort":0,"pic":""},{"id":133675,"name":"C","value":"按照公司要求，将重新定义产品名称和型号，办理OA入库操作，再进行输出给销售","qId":6769,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":28683,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"流程管理","keywordTwo":"监播终端","keywordThree":"极光","keywordFour":"视联网","keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":6769,"moduleId":1,"functionId":3,"answer":"133673","isRight":1,"notAnswerIds":[133674,133675,133676],"answerIds":[133673],"sortIds":[133673,133676,133674,133675],"userTypeMd5":"6131r2f5J01d4a6b23d46aef4e3bba6823d4a38275","timestamp":1667517278235}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:08 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 578
+
+{"code":200,"msg":"成功","data":[{"id":133673,"isTrue":0,"value":"按照公司要求，重新定义产品名称和型号，列入产品配置清单，输出给销售即可"},{"id":133676,"isTrue":0,"value":"按照公司要求，监播终端的相关功能和描述，可由八路解码电视墙服务代替"},{"id":133674,"isTrue":0,"value":"按照公司要求，产品清单模板中不存在监播类型终端，可进行外采"},{"id":133675,"isTrue":1,"value":"按照公司要求，将重新定义产品名称和型号，办理OA入库操作，再进行输出给销售"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=4&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:09 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 1174
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":6889,"name":"每个项目都是独特的，因此项目经理可能需要裁剪项目进度管理过程，裁剪的因素包含（但不限于）（）？","type":1,"sid":57,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":134316,"name":"D","value":"生命周期方法、资源可用性、项目维度、协议","qId":6889,"isTrue":null,"sort":0,"pic":""},{"id":134313,"name":"A","value":"生命周期方法、资源可用性、项目维度、技术支持","qId":6889,"isTrue":null,"sort":0,"pic":""},{"id":134314,"name":"B","value":"生命周期方法、资源可用性、项目维度、项目章程","qId":6889,"isTrue":null,"sort":0,"pic":""},{"id":134317,"name":"E","value":"生命周期方法、资源可用性、项目维度、合同","qId":6889,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":42846,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"项目管理","keywordTwo":"项目进度","keywordThree":"裁剪","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":6889,"moduleId":1,"functionId":3,"answer":"134314","isRight":1,"notAnswerIds":[134313,134316,134317],"answerIds":[134314],"sortIds":[134316,134313,134314,134317],"userTypeMd5":"f12df609O880203ce395083b533e5569f6f60e6559","timestamp":1667517281397}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:11 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 432
+
+{"code":200,"msg":"成功","data":[{"id":134316,"isTrue":0,"value":"生命周期方法、资源可用性、项目维度、协议"},{"id":134313,"isTrue":1,"value":"生命周期方法、资源可用性、项目维度、技术支持"},{"id":134314,"isTrue":0,"value":"生命周期方法、资源可用性、项目维度、项目章程"},{"id":134317,"isTrue":0,"value":"生命周期方法、资源可用性、项目维度、合同"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=5&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:13 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1349
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":6960,"name":"项目团队中的团队成员来自世界各地，团队成员的文化背景各不相同。在某一次项目状态会议上，一名团队成员使用了被另一个国家所禁止的词汇，另一名团队成员听到之后非常气愤。针对该冲突的解决，项目经理应该怎么办？","type":1,"sid":67,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":66,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":134689,"name":"C","value":"联系说出禁止词汇团队成员的职能经理，由职能经理解决","qId":6960,"isTrue":null,"sort":0,"pic":""},{"id":134687,"name":"A","value":"建议两位成员直接在会议上解决冲突","qId":6960,"isTrue":null,"sort":0,"pic":""},{"id":134688,"name":"B","value":"鼓励团队成员注重共同的文化而忽略掉有冲突的部分","qId":6960,"isTrue":null,"sort":0,"pic":""},{"id":134690,"name":"D","value":"单独召开会议与两位成员讨论文化差异，再协调解决矛盾","qId":6960,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":42872,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"冲突管理","keywordTwo":"沟通","keywordThree":"项目管理","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":6960,"moduleId":1,"functionId":3,"answer":"134688","isRight":1,"notAnswerIds":[134687,134689,134690],"answerIds":[134688],"sortIds":[134689,134687,134688,134690],"userTypeMd5":"e2fak66bMed061195ed54c5f210680e60a44ae4b8e","timestamp":1667517284611}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:14 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 447
+
+{"code":200,"msg":"成功","data":[{"id":134689,"isTrue":0,"value":"联系说出禁止词汇团队成员的职能经理，由职能经理解决"},{"id":134687,"isTrue":0,"value":"建议两位成员直接在会议上解决冲突"},{"id":134688,"isTrue":0,"value":"鼓励团队成员注重共同的文化而忽略掉有冲突的部分"},{"id":134690,"isTrue":1,"value":"单独召开会议与两位成员讨论文化差异，再协调解决矛盾"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=6&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:16 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1362
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":7018,"name":"XXXX101项目涉及设备安装调试验收，在项目结项前，项目经理需要发起【销售/赠送项目交付物审批单】流程，需要提交的资料为最终用户签的（   ），最终客户签的(   )，甲方签的《到货验收单》、（     ）。","type":1,"sid":57,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":134938,"name":"E","value":"《安装调试单》，《安装调试报告》，《安装调试确认单》","qId":7018,"isTrue":null,"sort":0,"pic":""},{"id":134937,"name":"D","value":"《安装调试确认单》，《安装调试单》，《安装调试报告》","qId":7018,"isTrue":null,"sort":0,"pic":""},{"id":134936,"name":"C","value":"《安装调试单》，《安装调试确认单》，《安装调试报告》","qId":7018,"isTrue":null,"sort":0,"pic":""},{"id":134935,"name":"B","value":"《安装调试报告》，《安装调试确认单》，《安装调试单》","qId":7018,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":43435,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"项目交付","keywordTwo":"安装调试","keywordThree":"OC","keywordFour":"FD","keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":7018,"moduleId":1,"functionId":3,"answer":"134936","isRight":1,"notAnswerIds":[134935,134937,134938],"answerIds":[134936],"sortIds":[134938,134937,134936,134935],"userTypeMd5":"3fe6a2d5Pb9d406fb82c69b4d1a47ca9c92a75d718","timestamp":1667517287400}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:17 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 492
+
+{"code":200,"msg":"成功","data":[{"id":134938,"isTrue":0,"value":"《安装调试单》，《安装调试报告》，《安装调试确认单》"},{"id":134937,"isTrue":0,"value":"《安装调试确认单》，《安装调试单》，《安装调试报告》"},{"id":134936,"isTrue":1,"value":"《安装调试单》，《安装调试确认单》，《安装调试报告》"},{"id":134935,"isTrue":0,"value":"《安装调试报告》，《安装调试确认单》，《安装调试单》"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=7&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:18 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1341
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":7076,"name":"用户通过4G信号用掌上通加入视联网会议时，开展会议业务的数据路径为","type":1,"sid":30,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":9,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":135661,"name":"A","value":"发言终端---v2v网络---流媒体---运营商IP骨干/城域网---4G核心网---用户所在地4G无线网---掌上通","qId":7076,"isTrue":null,"sort":0,"pic":""},{"id":135662,"name":"B","value":"发言终端---v2v网络---共享---运营商IP骨干/城域网---4G核心网---用户所在地4G无线网---掌上通","qId":7076,"isTrue":null,"sort":0,"pic":""},{"id":135665,"name":"E","value":"发言终端---v2v网络---流媒体---运营商IP骨干/城域网---4G无线网---4G核心网---掌上通","qId":7076,"isTrue":null,"sort":0,"pic":""},{"id":135664,"name":"D","value":"发言终端---v2v网络---共享---4G核心网--运营商IP骨干/城域网---用户所在地4G无线网---掌上通","qId":7076,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":39917,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"掌上通","keywordTwo":"会员业务","keywordThree":"数据路径","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":7076,"moduleId":1,"functionId":3,"answer":"135665","isRight":1,"notAnswerIds":[135661,135662,135664],"answerIds":[135665],"sortIds":[135661,135662,135665,135664],"userTypeMd5":"19c6r795Xf44ff58232c982b802534faf80bfa0e33","timestamp":1667517290222}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:20 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 642
+
+{"code":200,"msg":"成功","data":[{"id":135661,"isTrue":1,"value":"发言终端---v2v网络---流媒体---运营商IP骨干/城域网---4G核心网---用户所在地4G无线网---掌上通"},{"id":135662,"isTrue":0,"value":"发言终端---v2v网络---共享---运营商IP骨干/城域网---4G核心网---用户所在地4G无线网---掌上通"},{"id":135665,"isTrue":0,"value":"发言终端---v2v网络---流媒体---运营商IP骨干/城域网---4G无线网---4G核心网---掌上通"},{"id":135664,"isTrue":0,"value":"发言终端---v2v网络---共享---4G核心网--运营商IP骨干/城域网---用户所在地4G无线网---掌上通"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=8&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:21 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1236
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":7177,"name":"《乡村建设行动实施方案》指出，要建立项目库管理制度。按照村申报、乡审核、县审定原则，在（）普遍建立乡村建设相关项目库。加强项目论证，优先纳入群众需求强烈、短板突出、兼顾农业生产和农民生活条件改善的项目，切实提高入库项目质量。安排乡村建设项目资金，原则上须从项目库中选择项目。","type":1,"sid":262,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":16,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":136089,"name":"A","value":"省一级","qId":7177,"isTrue":null,"sort":0,"pic":""},{"id":136092,"name":"D","value":"乡一级","qId":7177,"isTrue":null,"sort":0,"pic":""},{"id":136091,"name":"C","value":"县一级","qId":7177,"isTrue":null,"sort":0,"pic":""},{"id":136093,"name":"E","value":"村一级","qId":7177,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":46887,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"乡村振兴","keywordTwo":"政策制度","keywordThree":"百县作战","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":7177,"moduleId":1,"functionId":3,"answer":"136091","isRight":1,"notAnswerIds":[136089,136092,136093],"answerIds":[136091],"sortIds":[136089,136092,136091,136093],"userTypeMd5":"9f37dac7M99043413dff5d40156cf9a385b7481017","timestamp":1667517294046}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:24 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 216
+
+{"code":200,"msg":"成功","data":[{"id":136089,"isTrue":0,"value":"省一级"},{"id":136092,"isTrue":0,"value":"乡一级"},{"id":136091,"isTrue":1,"value":"县一级"},{"id":136093,"isTrue":0,"value":"村一级"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=9&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:25 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 1284
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":7250,"name":"启明2H视联网终端进行双流视频会议时，笔记本电脑PPT画面可以通过以()方式接入到启明2H视联网终端？","type":1,"sid":262,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":16,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":139283,"name":"A","value":"通过HDMI线，连接计算机的HDMIInput接口和启明2H视联网终端的HDMIOutput接口","qId":7250,"isTrue":null,"sort":0,"pic":""},{"id":139286,"name":"D","value":"通过HDMI线，连接计算机的HDMIOutput接口和启明2H视联网终端的HDMIInput接口","qId":7250,"isTrue":null,"sort":0,"pic":""},{"id":139284,"name":"B","value":"通过HDMI线，连接计算机的HDMIOutput接口和启明2H视联网终端的HDMIOutput接口","qId":7250,"isTrue":null,"sort":0,"pic":""},{"id":139287,"name":"E","value":"通过网线，连接计算机的网口和启明2H视联网终端的网口","qId":7250,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":46960,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"视联网终端","keywordTwo":"产品功能","keywordThree":"百县作战","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":7250,"moduleId":1,"functionId":3,"answer":"139284","isRight":1,"notAnswerIds":[139283,139286,139287],"answerIds":[139284],"sortIds":[139283,139286,139284,139287],"userTypeMd5":"196anbcaL177a1bc3a14068fc375ae1e95b506f5af","timestamp":1667517296961}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:27 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 537
+
+{"code":200,"msg":"成功","data":[{"id":139283,"isTrue":0,"value":"通过HDMI线，连接计算机的HDMIInput接口和启明2H视联网终端的HDMIOutput接口"},{"id":139286,"isTrue":1,"value":"通过HDMI线，连接计算机的HDMIOutput接口和启明2H视联网终端的HDMIInput接口"},{"id":139284,"isTrue":0,"value":"通过HDMI线，连接计算机的HDMIOutput接口和启明2H视联网终端的HDMIOutput接口"},{"id":139287,"isTrue":0,"value":"通过网线，连接计算机的网口和启明2H视联网终端的网口"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=10&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:28 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 1336
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":8002,"name":"在视讯领域中，作为售前工程师经常遇到某项目招标参数中出现专业技术名词，其中“对称编码”说法正确的是（）","type":1,"sid":75,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":7,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":139832,"name":"A","value":"采用压缩和解压缩占用相同计算处理能力和时间的算法进行压缩的编码方式","qId":8002,"isTrue":null,"sort":0,"pic":""},{"id":139834,"name":"C","value":"采用压缩和解压缩占用相同计算处理能力和时间的算法进行解压缩的编码方式","qId":8002,"isTrue":null,"sort":0,"pic":""},{"id":139833,"name":"B","value":"采用压缩和解压缩占用不同计算处理能力和时间的算法进行压缩的编码方式","qId":8002,"isTrue":null,"sort":0,"pic":""},{"id":139835,"name":"D","value":"采用压缩和解压缩占用不同计算处理能力和时间的算法进行解压缩的编码方式","qId":8002,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":48010,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"编码","keywordTwo":"对称编码","keywordThree":"编码方式","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":8002,"moduleId":1,"functionId":3,"answer":"139834","isRight":1,"notAnswerIds":[139832,139833,139835],"answerIds":[139834],"sortIds":[139832,139834,139833,139835],"userTypeMd5":"4226c638Nc1a6a9448580caa44a9833fd7b643ed0c","timestamp":1667517300253}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:30 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 582
+
+{"code":200,"msg":"成功","data":[{"id":139832,"isTrue":1,"value":"采用压缩和解压缩占用相同计算处理能力和时间的算法进行压缩的编码方式"},{"id":139834,"isTrue":0,"value":"采用压缩和解压缩占用相同计算处理能力和时间的算法进行解压缩的编码方式"},{"id":139833,"isTrue":0,"value":"采用压缩和解压缩占用不同计算处理能力和时间的算法进行压缩的编码方式"},{"id":139835,"isTrue":0,"value":"采用压缩和解压缩占用不同计算处理能力和时间的算法进行解压缩的编码方式"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=11&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:31 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 1110
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":8105,"name":"在视联网linux服务器，需要配置如下IP地址信息：IP：10.1.1.1/29,GATEWAY:10.1.1.6，网卡配置中下列配置正确的是","type":1,"sid":26,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":140348,"name":"A","value":"ipaddr=10.1.1.1\nnetmask=255.255.255.248\ngateway=10.1.1.6\n","qId":8105,"isTrue":null,"sort":0,"pic":""},{"id":140351,"name":"D","value":"IPADDR=10.1.1.1\nNETMASK=255.255.255.248\nGATEWAY=10.1.1.6\n","qId":8105,"isTrue":null,"sort":0,"pic":""},{"id":140350,"name":"C","value":"ipaddr=10.1.1.1\nprefix=29\ngateway=10.1.1.6\n","qId":8105,"isTrue":null,"sort":0,"pic":""},{"id":140352,"name":"E","value":"IPADDR=10.1.1.1\nPREFIX=29\nGATE=10.1.1.6","qId":8105,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":48547,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"LINUX","keywordTwo":"IP","keywordThree":"子网","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":8105,"moduleId":1,"functionId":3,"answer":"140351","isRight":1,"notAnswerIds":[140348,140350,140352],"answerIds":[140351],"sortIds":[140348,140351,140350,140352],"userTypeMd5":"039dm5adR601b20c5b69091090725342cd4544147f","timestamp":1667517303543}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:33 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 387
+
+{"code":200,"msg":"成功","data":[{"id":140348,"isTrue":0,"value":"ipaddr=10.1.1.1\nnetmask=255.255.255.248\ngateway=10.1.1.6\n"},{"id":140351,"isTrue":1,"value":"IPADDR=10.1.1.1\nNETMASK=255.255.255.248\nGATEWAY=10.1.1.6\n"},{"id":140350,"isTrue":0,"value":"ipaddr=10.1.1.1\nprefix=29\ngateway=10.1.1.6\n"},{"id":140352,"isTrue":0,"value":"IPADDR=10.1.1.1\nPREFIX=29\nGATE=10.1.1.6"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=12&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:35 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1067
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":8320,"name":"4K多功能应用终端标准套装包含哪些产品？","type":1,"sid":170,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":35,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":141260,"name":"A","value":"1*视联网终端；\n1*麦克风；    \n1*4K云台摄像机","qId":8320,"isTrue":null,"sort":0,"pic":""},{"id":141264,"name":"E","value":"1*视联网终端；\n1*麦克风；\n2*高清摄像机","qId":8320,"isTrue":null,"sort":0,"pic":""},{"id":141261,"name":"B","value":"1*视联网终端；\n2*麦克风；\n1*4K云台摄像机","qId":8320,"isTrue":null,"sort":0,"pic":""},{"id":141262,"name":"C","value":"1*视联网终端；\n1*麦克风；\n1*高清摄像机","qId":8320,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":36830,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"产品","keywordTwo":"标准套装","keywordThree":"产品特点","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":8320,"moduleId":1,"functionId":3,"answer":"141261","isRight":1,"notAnswerIds":[141260,141262,141264],"answerIds":[141261],"sortIds":[141260,141264,141261,141262],"userTypeMd5":"913ba471P82970d8f38e92f20cf0f1536466a60ebe","timestamp":1667517306854}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:37 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 408
+
+{"code":200,"msg":"成功","data":[{"id":141260,"isTrue":1,"value":"1*视联网终端；\n1*麦克风；    \n1*4K云台摄像机"},{"id":141264,"isTrue":0,"value":"1*视联网终端；\n1*麦克风；\n2*高清摄像机"},{"id":141261,"isTrue":0,"value":"1*视联网终端；\n2*麦克风；\n1*4K云台摄像机"},{"id":141262,"isTrue":0,"value":"1*视联网终端；\n1*麦克风；\n1*高清摄像机"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=13&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:38 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1211
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":9032,"name":"你正在配置你维护的H3C交换机，配置之前已经在交换机上保存了当前配置文件来startup20220221.cfg，配置完毕执行了save force，然后你发现有多处错误，想回滚到上一次的配置文件时，你应该：","type":1,"sid":26,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":144019,"name":"C","value":"start-up flash:/startup20220221.cfg","qId":9032,"isTrue":null,"sort":0,"pic":""},{"id":144021,"name":"E","value":"configuration replace  flash:/startup20220221.cfg","qId":9032,"isTrue":null,"sort":0,"pic":""},{"id":144018,"name":"B","value":"configuration replace file flash:/startup20220221.cfg","qId":9032,"isTrue":null,"sort":0,"pic":""},{"id":144017,"name":"A","value":"copy flash:/startup20220221.cfg  current-configuration","qId":9032,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":49565,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"备份","keywordTwo":"回滚","keywordThree":"交换机","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":9032,"moduleId":1,"functionId":3,"answer":"144018","isRight":1,"notAnswerIds":[144017,144019,144021],"answerIds":[144018],"sortIds":[144019,144021,144018,144017],"userTypeMd5":"e31bve60Af9d5fdbcbd7727ef9406f524cc70aacae","timestamp":1667517309881}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:40 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 371
+
+{"code":200,"msg":"成功","data":[{"id":144019,"isTrue":0,"value":"start-up flash:/startup20220221.cfg"},{"id":144021,"isTrue":0,"value":"configuration replace  flash:/startup20220221.cfg"},{"id":144018,"isTrue":1,"value":"configuration replace file flash:/startup20220221.cfg"},{"id":144017,"isTrue":0,"value":"copy flash:/startup20220221.cfg  current-configuration"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=14&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:41 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 1316
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":9279,"name":"视联网“村村通”解决方案的设计目标是（）","type":1,"sid":86,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":7,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":145529,"name":"C","value":"依托现有市级视联网平台，完成县级政法单位基层视联网终端点位全覆盖","qId":9279,"isTrue":null,"sort":0,"pic":""},{"id":145527,"name":"A","value":"依托现有县级监控管理平台，完成乡镇（街道）、村（社区）两级公安单位基层监控点位全覆盖","qId":9279,"isTrue":null,"sort":0,"pic":""},{"id":145528,"name":"B","value":"依托现有县级视联网平台，完成乡镇（街道）、村（社区）两级政法单位基层视联网终端点位全覆盖","qId":9279,"isTrue":null,"sort":0,"pic":""},{"id":145531,"name":"E","value":"依托现有县级GIS天眼平台，完成乡镇（街道）、村（社区）两级政法单位基层的点对点指挥调度","qId":9279,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":50691,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"村村通","keywordTwo":"设计","keywordThree":"目标","keywordFour":"方案","keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":9279,"moduleId":1,"functionId":3,"answer":"145528","isRight":1,"notAnswerIds":[145527,145529,145531],"answerIds":[145528],"sortIds":[145529,145527,145528,145531],"userTypeMd5":"a661ce9eQ7e40159da8b4ec29048fe0b77173d0b88","timestamp":1667517312669}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:43 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 660
+
+{"code":200,"msg":"成功","data":[{"id":145529,"isTrue":0,"value":"依托现有市级视联网平台，完成县级政法单位基层视联网终端点位全覆盖"},{"id":145527,"isTrue":0,"value":"依托现有县级监控管理平台，完成乡镇（街道）、村（社区）两级公安单位基层监控点位全覆盖"},{"id":145528,"isTrue":1,"value":"依托现有县级视联网平台，完成乡镇（街道）、村（社区）两级政法单位基层视联网终端点位全覆盖"},{"id":145531,"isTrue":0,"value":"依托现有县级GIS天眼平台，完成乡镇（街道）、村（社区）两级政法单位基层的点对点指挥调度"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=15&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:12:43 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1676
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":9283,"name":"我司专为安全保密会议场景开发的视联网视频会议管理系统功能较为丰富，可满足安全保密视频会议的各类功能需求，针对以下功能说法不正确的是（）","type":1,"sid":28,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":7,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":145954,"name":"C","value":"支持会议中双流控制、点对点会议授权等会议管理功能","qId":9283,"isTrue":null,"sort":0,"pic":""},{"id":145956,"name":"E","value":"具备系统管理员、安全保密管理员、安全审计员、普通业务员、会场管理员、会议操作员、会议记录员软件模块角色及权限管理功能，各模块登录后仅能使用权限范围内的功能","qId":9283,"isTrue":null,"sort":0,"pic":""},{"id":145953,"name":"B","value":"支持对视联网硬件视频会议终端、视联网多点控制单元类设备的管理功能，系统支持对以上设备的注册绑定、变更、删除等，注册绑定成功后允许其接入使用","qId":9283,"isTrue":null,"sort":0,"pic":""},{"id":145955,"name":"D","value":"支持对已录制的视频会议进行回放的功能，录制完成后，可通过视联网视频会议管理系统将已录制的会议记录文件推送到任意终端进行视频回放","qId":9283,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":50673,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"709综管","keywordTwo":"角色","keywordThree":"功能","keywordFour":"产品","keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":9283,"moduleId":1,"functionId":3,"answer":"145956","isRight":1,"notAnswerIds":[145952,145954,145955],"answerIds":[145956],"sortIds":[145952,145954,145956,145955],"userTypeMd5":"394fqa1cD62a07ab777511c4f58ee53043600229c1","timestamp":1667517352602}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:13:22 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 732
+
+{"code":200,"msg":"成功","data":[{"id":145952,"isTrue":0,"value":"支持与上级平台级联贯通实现协议级无缝对接"},{"id":145954,"isTrue":0,"value":"支持会议中双流控制、点对点会议授权等会议管理功能"},{"id":145956,"isTrue":0,"value":"具备系统管理员、安全保密管理员、安全审计员、普通业务员、会场管理员、会议操作员、会议记录员软件模块角色及权限管理功能，各模块登录后仅能使用权限范围内的功能"},{"id":145955,"isTrue":1,"value":"支持对已录制的视频会议进行回放的功能，录制完成后，可通过视联网视频会议管理系统将已录制的会议记录文件推送到任意终端进行视频回放"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=16&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:13:25 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 1508
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":9393,"name":"我司专为安全保密会议场景开发的视联网视频会议管理系统功能较为丰富，可满足安全保密视频会议的各类功能需求，针对以下功能说法正确的是（）","type":1,"sid":28,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":7,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":146029,"name":"D","value":"视联网视频会议管理系统视频回放功能可支持会议录制文件下载，并支持多种通用播放器进行本地观看","qId":9393,"isTrue":null,"sort":0,"pic":""},{"id":146027,"name":"B","value":"支持与上级平台级联贯通实现协议级无缝对接","qId":9393,"isTrue":null,"sort":0,"pic":""},{"id":146026,"name":"A","value":"支持对已录制的视频会议进行回放的功能，录制完成后，可通过视联网视频会议管理系统将已录制的会议记录文件推送到任意终端进行视频回放","qId":9393,"isTrue":null,"sort":0,"pic":""},{"id":146028,"name":"C","value":"视联网视频会议管理系统是所有友商中唯一获得国保测相关测评证书的会议管理系统产品，完全符合相关标准要求","qId":9393,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":50674,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"709综管","keywordTwo":"特性","keywordThree":"功能","keywordFour":"产品","keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":9393,"moduleId":1,"functionId":3,"answer":"146026","isRight":1,"notAnswerIds":[146027,146028,146029],"answerIds":[146026],"sortIds":[146029,146027,146026,146028],"userTypeMd5":"5f80afccRe55ece35601eeeb768540926de233eb63","timestamp":1667517356538}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:13:26 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 714
+
+{"code":200,"msg":"成功","data":[{"id":146029,"isTrue":0,"value":"视联网视频会议管理系统视频回放功能可支持会议录制文件下载，并支持多种通用播放器进行本地观看"},{"id":146027,"isTrue":1,"value":"支持与上级平台级联贯通实现协议级无缝对接"},{"id":146026,"isTrue":0,"value":"支持对已录制的视频会议进行回放的功能，录制完成后，可通过视联网视频会议管理系统将已录制的会议记录文件推送到任意终端进行视频回放"},{"id":146028,"isTrue":0,"value":"视联网视频会议管理系统是所有友商中唯一获得国保测相关测评证书的会议管理系统产品，完全符合相关标准要求"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=17&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:13:28 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 1283
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":9457,"name":"启明2H视联网终端进行双流视频会议时，笔记本电脑PPT画面可以通过以（）方式接入到启明2H视联网终端？","type":1,"sid":28,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":7,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":146343,"name":"D","value":"通过HDMI线，连接计算机的HDMI Output接口和启明2H视联网终端的HDMI Input接口","qId":9457,"isTrue":null,"sort":0,"pic":""},{"id":146342,"name":"C","value":"通过HDMI线，连接计算机的HDMI Input接口和启明2H视联网终端的HDMI Input接口","qId":9457,"isTrue":null,"sort":0,"pic":""},{"id":146344,"name":"E","value":"通过网线，连接计算机的网口和启明2H视联网终端的网口","qId":9457,"isTrue":null,"sort":0,"pic":""},{"id":146340,"name":"A","value":"通过HDMI线，连接计算机的HDMI Input接口和启明2H视联网终端的HDMI Output接口","qId":9457,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":50134,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"启明2H","keywordTwo":"产品功能","keywordThree":"产品特点","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":9457,"moduleId":1,"functionId":3,"answer":"146340","isRight":1,"notAnswerIds":[146342,146343,146344],"answerIds":[146340],"sortIds":[146343,146342,146344,146340],"userTypeMd5":"0625s051V81721f38269faf7e8bad5a62b54db367a","timestamp":1667517360341}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:13:30 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 541
+
+{"code":200,"msg":"成功","data":[{"id":146343,"isTrue":1,"value":"通过HDMI线，连接计算机的HDMI Output接口和启明2H视联网终端的HDMI Input接口"},{"id":146342,"isTrue":0,"value":"通过HDMI线，连接计算机的HDMI Input接口和启明2H视联网终端的HDMI Input接口"},{"id":146344,"isTrue":0,"value":"通过网线，连接计算机的网口和启明2H视联网终端的网口"},{"id":146340,"isTrue":0,"value":"通过HDMI线，连接计算机的HDMI Input接口和启明2H视联网终端的HDMI Output接口"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=18&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:13:32 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 1243
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":9536,"name":"以下关于个人信息保护的做法不正确的是（）","type":1,"sid":53,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":146695,"name":"A","value":"在社交网站类软件上发布火车票、飞机票、护照、照片、日程、行踪等","qId":9536,"isTrue":null,"sort":0,"pic":""},{"id":146698,"name":"D","value":"填写调查问卷、扫二维码注册尽可能不使用真实个人信息","qId":9536,"isTrue":null,"sort":0,"pic":""},{"id":146697,"name":"C","value":"从常用应用商店下载App，不从陌生、不知名应用商店、网站页面下载App","qId":9536,"isTrue":null,"sort":0,"pic":""},{"id":146696,"name":"B","value":"在图书馆、打印店等公共场合，或是使用他人手机登录账号，不要选择自动保存密码，离开时记得退出账号","qId":9536,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":50909,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"安全意识","keywordTwo":"个人信息","keywordThree":"公共","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":9536,"moduleId":1,"functionId":3,"answer":"146696","isRight":1,"notAnswerIds":[146695,146697,146698],"answerIds":[146696],"sortIds":[146695,146698,146697,146696],"userTypeMd5":"0b81e1e5Z5f79799001bcf1f9c0924c77e73150e02","timestamp":1667517363721}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:13:34 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 582
+
+{"code":200,"msg":"成功","data":[{"id":146695,"isTrue":1,"value":"在社交网站类软件上发布火车票、飞机票、护照、照片、日程、行踪等"},{"id":146698,"isTrue":0,"value":"填写调查问卷、扫二维码注册尽可能不使用真实个人信息"},{"id":146697,"isTrue":0,"value":"从常用应用商店下载App，不从陌生、不知名应用商店、网站页面下载App"},{"id":146696,"isTrue":0,"value":"在图书馆、打印店等公共场合，或是使用他人手机登录账号，不要选择自动保存密码，离开时记得退出账号"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=19&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:13:35 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 1245
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":9567,"name":"因公外出需订购客户机票并该费用由公司承担时，需如何申请该机票？","type":1,"sid":252,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":15,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":146849,"name":"D","value":"先提交《新建事项（自由流程）》，再提交《机票购置申请单》，流程结束后联系机票负责人购买。","qId":9567,"isTrue":null,"sort":0,"pic":""},{"id":146850,"name":"E","value":"无需提交任何申请，自行购买客户机票然后报销。","qId":9567,"isTrue":null,"sort":0,"pic":""},{"id":146848,"name":"C","value":"先提交《出差申请单》，再提交《机票购置申请单》，流程结束后联系机票负责人购买。","qId":9567,"isTrue":null,"sort":0,"pic":""},{"id":146846,"name":"A","value":"提交《机票购置申请单》，联系机票负责人购买。","qId":9567,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":50774,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"机票","keywordTwo":"出差","keywordThree":"客户","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":9567,"moduleId":1,"functionId":3,"answer":"146846","isRight":1,"notAnswerIds":[146848,146849,146850],"answerIds":[146846],"sortIds":[146849,146850,146848,146846],"userTypeMd5":"0812l478W8a663ea4497a3cdffd863f2fd76f1fe04","timestamp":1667517367420}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:13:37 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 561
+
+{"code":200,"msg":"成功","data":[{"id":146849,"isTrue":1,"value":"先提交《新建事项（自由流程）》，再提交《机票购置申请单》，流程结束后联系机票负责人购买。"},{"id":146850,"isTrue":0,"value":"无需提交任何申请，自行购买客户机票然后报销。"},{"id":146848,"isTrue":0,"value":"先提交《出差申请单》，再提交《机票购置申请单》，流程结束后联系机票负责人购买。"},{"id":146846,"isTrue":0,"value":"提交《机票购置申请单》，联系机票负责人购买。"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=20&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:13:39 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1682
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":9738,"name":"售前能力对项目签单有影响，售前基础技能包括对自身产品和方案精通，并精通行业技术，而懂技术是售前与销售的基本区别，是售前应该长于销售的地方，懂技术才能搞定甲方的技术干系人。以下说法错误的是？","type":1,"sid":246,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":7,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":147649,"name":"B","value":"售前通常要掌握基本的硬件、网络、软件开发、数据库等知识；并且经常对可能涉及的新技术进行学习。","qId":9738,"isTrue":null,"sort":0,"pic":""},{"id":147651,"name":"D","value":"当售前不断学习后，售前的短板会越来很少、优势也越来越明显，所以为了节约公司成本可以少招销售或者不招销售。","qId":9738,"isTrue":null,"sort":0,"pic":""},{"id":147648,"name":"A","value":"售前不是研发，对技术的要求更强调广泛，与业务相关的技术要稍微深入掌握。","qId":9738,"isTrue":null,"sort":0,"pic":""},{"id":147650,"name":"C","value":"售前必须对自家公司的产品、方案非常熟悉，尤其是自己所负责的产品、项目；要知道自家产品的优劣势，能够将公司产品的亮点和优势推介给客户；要对前期项目了如指掌。","qId":9738,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":50963,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"售前","keywordTwo":"销售","keywordThree":"技术","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":9738,"moduleId":1,"functionId":3,"answer":"147649","isRight":1,"notAnswerIds":[147648,147650,147651],"answerIds":[147649],"sortIds":[147649,147651,147648,147650],"userTypeMd5":"7670q2b5A3314a6fe0be9e7758488a05d55d586abe","timestamp":1667517373736}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:13:44 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 810
+
+{"code":200,"msg":"成功","data":[{"id":147649,"isTrue":0,"value":"售前通常要掌握基本的硬件、网络、软件开发、数据库等知识；并且经常对可能涉及的新技术进行学习。"},{"id":147651,"isTrue":1,"value":"当售前不断学习后，售前的短板会越来很少、优势也越来越明显，所以为了节约公司成本可以少招销售或者不招销售。"},{"id":147648,"isTrue":0,"value":"售前不是研发，对技术的要求更强调广泛，与业务相关的技术要稍微深入掌握。"},{"id":147650,"isTrue":0,"value":"售前必须对自家公司的产品、方案非常熟悉，尤其是自己所负责的产品、项目；要知道自家产品的优劣势，能够将公司产品的亮点和优势推介给客户；要对前期项目了如指掌。"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=21&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:13:45 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1190
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":9848,"name":"20世纪50年代末，正处于冷战时期。当时美国军方为了自己的计算机网络在受到袭击时，即使部分网络被摧毁，其余部分仍能保持通信联系，便由美国国防部的高级研究计划局建设了一个军用网，于1969年正式启用，当时仅连接了4台计算机，供科学家们进行计算机联网实验用。所以Internet最早起源于（）？","type":1,"sid":75,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":7,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":148063,"name":"A","value":"ARPAnet","qId":9848,"isTrue":null,"sort":0,"pic":""},{"id":148067,"name":"E","value":"IPROM","qId":9848,"isTrue":null,"sort":0,"pic":""},{"id":148066,"name":"D","value":"WAN","qId":9848,"isTrue":null,"sort":0,"pic":""},{"id":148064,"name":"B","value":"MAN","qId":9848,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":50943,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"IP","keywordTwo":"因特网","keywordThree":"互联网","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 261
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":9848,"moduleId":1,"functionId":3,"answer":"148066","isRight":1,"notAnswerIds":[148063,148064,148067],"answerIds":[148066],"sortIds":[148063,148067,148066,148064],"userTypeMd5":"c14bk129P1b9736621f713e1aeaaf83ead32864de5","timestamp":1667517377230}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:13:47 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 198
+
+{"code":200,"msg":"成功","data":[{"id":148063,"isTrue":1,"value":"ARPAnet"},{"id":148067,"isTrue":0,"value":"IPROM"},{"id":148066,"isTrue":0,"value":"WAN"},{"id":148064,"isTrue":0,"value":"MAN"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=22&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:13:48 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1189
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":10351,"name":"服务标是指除货物和工程以外的其他政府采购对象，下列关于服务标评分标准（价格分、商务技术分）论述正确的是？","type":1,"sid":46,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":7,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":150196,"name":"A","value":"价格分比重不低于10%；商务技术分比重不高于90%;","qId":10351,"isTrue":null,"sort":0,"pic":""},{"id":150199,"name":"D","value":"价格分比重不低于40%；商务技术分比重不高于60%;","qId":10351,"isTrue":null,"sort":0,"pic":""},{"id":150198,"name":"C","value":"价格分比重不低于30%；商务技术分比重不高于70%;","qId":10351,"isTrue":null,"sort":0,"pic":""},{"id":150200,"name":"E","value":"价格分比重不低于45%；商务技术分比重不高于55%;","qId":10351,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":52894,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"709","keywordTwo":"招投标","keywordThree":"服务标","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":10351,"moduleId":1,"functionId":3,"answer":"150200","isRight":1,"notAnswerIds":[150196,150198,150199],"answerIds":[150200],"sortIds":[150196,150199,150198,150200],"userTypeMd5":"1a96rddfBe3bd4a09e8dd5f2b5d80b75bd4a1c2c45","timestamp":1667517380503}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:13:50 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 436
+
+{"code":200,"msg":"成功","data":[{"id":150196,"isTrue":1,"value":"价格分比重不低于10%；商务技术分比重不高于90%;"},{"id":150199,"isTrue":0,"value":"价格分比重不低于40%；商务技术分比重不高于60%;"},{"id":150198,"isTrue":0,"value":"价格分比重不低于30%；商务技术分比重不高于70%;"},{"id":150200,"isTrue":0,"value":"价格分比重不低于45%；商务技术分比重不高于55%;"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=23&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:13:55 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: close
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1376
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":10614,"name":"关于“政府采购工程以及与工程建设有关的货物、服务”,下列说法不正确的是(    )。","type":1,"sid":170,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":35,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":150924,"name":"D","value":"与工程建设有关的服务,是指为完成工程所需的勘察、设计、监理等服务","qId":10614,"isTrue":null,"sort":0,"pic":""},{"id":150925,"name":"E","value":"货物项目的价格分值占总分值的比重不得低于30%，服务项目的价格分值占总分值的比重不得低于10%","qId":10614,"isTrue":null,"sort":0,"pic":""},{"id":150921,"name":"A","value":"A.工程包括建设工程、“希望工程”“五个一工程”“系统工程”“信息网络工程”等","qId":10614,"isTrue":null,"sort":0,"pic":""},{"id":150922,"name":"B","value":"工程,是指建设工程,包括建筑物和构筑物的新建、改建、扩建及其相关的装修、拆除、修缮等","qId":10614,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":36799,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"招投标知识","keywordTwo":"政府采购工程","keywordThree":"货物、服务","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":10614,"moduleId":1,"functionId":3,"answer":"150921","isRight":1,"notAnswerIds":[150922,150924,150925],"answerIds":[150921],"sortIds":[150924,150925,150921,150922],"userTypeMd5":"b7b6b4bbMe7229565c92c055d3f02b0f2312f78cd5","timestamp":1667517386926}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:13:57 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 638
+
+{"code":200,"msg":"成功","data":[{"id":150924,"isTrue":0,"value":"与工程建设有关的服务,是指为完成工程所需的勘察、设计、监理等服务"},{"id":150925,"isTrue":0,"value":"货物项目的价格分值占总分值的比重不得低于30%，服务项目的价格分值占总分值的比重不得低于10%"},{"id":150921,"isTrue":1,"value":"A.工程包括建设工程、“希望工程”“五个一工程”“系统工程”“信息网络工程”等"},{"id":150922,"isTrue":0,"value":"工程,是指建设工程,包括建筑物和构筑物的新建、改建、扩建及其相关的装修、拆除、修缮等"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=1&pageNumber=24&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:13:58 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 941
+
+{"code":200,"msg":"成功","data":{"total":24,"question":{"id":11029,"name":"当你查看H3C S7503EM交换机配置时，如果内容较多，一屏无法显示完整，按（）键查看下一页内容。","type":1,"sid":26,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152032,"name":"E","value":"alt+下箭头键","qId":11029,"isTrue":null,"sort":0,"pic":""},{"id":152029,"name":"B","value":"tab键","qId":11029,"isTrue":null,"sort":0,"pic":""},{"id":152028,"name":"A","value":"enter键","qId":11029,"isTrue":null,"sort":0,"pic":""},{"id":152030,"name":"C","value":"空格键","qId":11029,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":54203,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"H3C","keywordTwo":"交换机","keywordThree":"配置","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjAxMDIzYTI0LThhNGMtNGM3ZC1iMjk3LTlhYWI0ZWQ2OWUwZiJ9.Gil5160uvaKIF2VnQhqF7cHQMTO_gMP8XHzm4r47__k1i9CPrt8tMqzUbcb88H67Wxy_icsV55sL2AeiWFbopA
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/159/page-frame.html
+
+{"questionId":11029,"moduleId":1,"functionId":3,"answer":"152032","isRight":1,"notAnswerIds":[152028,152029,152030],"answerIds":[152032],"sortIds":[152032,152029,152028,152030],"userTypeMd5":"1d35h18dCbb672ff9babbc3d9b37188cdc9788a9ed","timestamp":1667517398297}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 03 Nov 2022 23:14:08 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 219
+
+{"code":200,"msg":"成功","data":[{"id":152032,"isTrue":0,"value":"alt+下箭头键"},{"id":152029,"isTrue":0,"value":"tab键"},{"id":152028,"isTrue":0,"value":"enter键"},{"id":152030,"isTrue":1,"value":"空格键"}]}
+
+------------------------------------------------------------------
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=0&pageNumber=1&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjkzOTg4MTdmLWQ3YjAtNGI5MC04Mjc5LTYyMDQyNGVjMzBkNiJ9.N8RH0U5ROAykfouRQswu1uNXBIJPZnGwvP5t4FCsWk33BnOOGaXkRQWbi6PsCUEdHQh7CsVszTs1Uuizxisvug
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/160/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Fri, 04 Nov 2022 13:51:37 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 969
+
+{"code":200,"msg":"成功","data":{"total":8,"question":{"id":11049,"name":"通过什么命令可以将H3C S7503EM交换机的G0/0/0接口恢复默认配置","type":1,"sid":26,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152059,"name":"E","value":"delete  int g0/0/0","qId":11049,"isTrue":null,"sort":0,"pic":""},{"id":152056,"name":"B","value":"先进入接口int g0/0/0  然后default","qId":11049,"isTrue":null,"sort":0,"pic":""},{"id":152055,"name":"A","value":"default  int g0/0/0","qId":11049,"isTrue":null,"sort":0,"pic":""},{"id":152058,"name":"D","value":"先进入接口int g0/0/0   然后reset","qId":11049,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":54308,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"交换机","keywordTwo":"H3C","keywordThree":"安全","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjkzOTg4MTdmLWQ3YjAtNGI5MC04Mjc5LTYyMDQyNGVjMzBkNiJ9.N8RH0U5ROAykfouRQswu1uNXBIJPZnGwvP5t4FCsWk33BnOOGaXkRQWbi6PsCUEdHQh7CsVszTs1Uuizxisvug
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/160/page-frame.html
+
+{"questionId":11049,"moduleId":1,"functionId":3,"answer":"152058","isRight":1,"notAnswerIds":[152055,152056,152059],"answerIds":[152058],"sortIds":[152059,152056,152055,152058],"userTypeMd5":"5d7eu2baL1fe1fd4569afd66dbeb2a172f4f47ad77","timestamp":1667570049204}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Fri, 04 Nov 2022 13:51:38 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 296
+
+{"code":200,"msg":"成功","data":[{"id":152059,"isTrue":0,"value":"delete  int g0/0/0"},{"id":152056,"isTrue":1,"value":"先进入接口int g0/0/0  然后default"},{"id":152055,"isTrue":0,"value":"default  int g0/0/0"},{"id":152058,"isTrue":0,"value":"先进入接口int g0/0/0   然后reset"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=0&pageNumber=2&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjkzOTg4MTdmLWQ3YjAtNGI5MC04Mjc5LTYyMDQyNGVjMzBkNiJ9.N8RH0U5ROAykfouRQswu1uNXBIJPZnGwvP5t4FCsWk33BnOOGaXkRQWbi6PsCUEdHQh7CsVszTs1Uuizxisvug
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/160/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Fri, 04 Nov 2022 13:51:39 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 977
+
+{"code":200,"msg":"成功","data":{"total":8,"question":{"id":11052,"name":"当H3C S7503E交换机开启安全的WEB功能时，并更改默认端口为18443，你将使用哪条命令更改端口号","type":1,"sid":26,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152072,"name":"C","value":"service https port 18443","qId":11052,"isTrue":null,"sort":0,"pic":""},{"id":152071,"name":"B","value":"https port 18443","qId":11052,"isTrue":null,"sort":0,"pic":""},{"id":152073,"name":"D","value":"service http port 18443","qId":11052,"isTrue":null,"sort":0,"pic":""},{"id":152070,"name":"A","value":"ip https port 18443","qId":11052,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":54291,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"https","keywordTwo":"交换机","keywordThree":"H3C","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjkzOTg4MTdmLWQ3YjAtNGI5MC04Mjc5LTYyMDQyNGVjMzBkNiJ9.N8RH0U5ROAykfouRQswu1uNXBIJPZnGwvP5t4FCsWk33BnOOGaXkRQWbi6PsCUEdHQh7CsVszTs1Uuizxisvug
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/160/page-frame.html
+
+{"questionId":11052,"moduleId":1,"functionId":3,"answer":"152070","isRight":1,"notAnswerIds":[152071,152072,152073],"answerIds":[152070],"sortIds":[152072,152071,152073,152070],"userTypeMd5":"da38z07aEff2cda9b6eb1df41c43e760829608b9ce","timestamp":1667570052107}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Fri, 04 Nov 2022 13:51:41 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 262
+
+{"code":200,"msg":"成功","data":[{"id":152072,"isTrue":0,"value":"service https port 18443"},{"id":152071,"isTrue":0,"value":"https port 18443"},{"id":152073,"isTrue":0,"value":"service http port 18443"},{"id":152070,"isTrue":1,"value":"ip https port 18443"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=0&pageNumber=3&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjkzOTg4MTdmLWQ3YjAtNGI5MC04Mjc5LTYyMDQyNGVjMzBkNiJ9.N8RH0U5ROAykfouRQswu1uNXBIJPZnGwvP5t4FCsWk33BnOOGaXkRQWbi6PsCUEdHQh7CsVszTs1Uuizxisvug
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/160/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Fri, 04 Nov 2022 13:51:42 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1016
+
+{"code":200,"msg":"成功","data":{"total":8,"question":{"id":11053,"name":"当你维护你的H3C S7503EM交换机时，你发现flash中有多余无用的文件，可以使用（）命令彻底的删除该文件","type":1,"sid":26,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152076,"name":"B","value":"rm -rf  删除文件名","qId":11053,"isTrue":null,"sort":0,"pic":""},{"id":152075,"name":"A","value":"delete  /unreserved  删除文件名","qId":11053,"isTrue":null,"sort":0,"pic":""},{"id":152078,"name":"D","value":"delete /rf 删除文件名","qId":11053,"isTrue":null,"sort":0,"pic":""},{"id":152079,"name":"E","value":"rm /rf 删除文件名","qId":11053,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":54289,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"交换机","keywordTwo":"H3C","keywordThree":"网络","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjkzOTg4MTdmLWQ3YjAtNGI5MC04Mjc5LTYyMDQyNGVjMzBkNiJ9.N8RH0U5ROAykfouRQswu1uNXBIJPZnGwvP5t4FCsWk33BnOOGaXkRQWbi6PsCUEdHQh7CsVszTs1Uuizxisvug
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/160/page-frame.html
+
+{"questionId":11053,"moduleId":1,"functionId":3,"answer":"152079","isRight":1,"notAnswerIds":[152075,152076,152078],"answerIds":[152079],"sortIds":[152076,152075,152078,152079],"userTypeMd5":"c253o0dbSd54c17ffde2d156c0327f8673844a168d","timestamp":1667570054326}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Fri, 04 Nov 2022 13:51:44 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 287
+
+{"code":200,"msg":"成功","data":[{"id":152076,"isTrue":0,"value":"rm -rf  删除文件名"},{"id":152075,"isTrue":1,"value":"delete  /unreserved  删除文件名"},{"id":152078,"isTrue":0,"value":"delete /rf 删除文件名"},{"id":152079,"isTrue":0,"value":"rm /rf 删除文件名"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=0&pageNumber=4&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjkzOTg4MTdmLWQ3YjAtNGI5MC04Mjc5LTYyMDQyNGVjMzBkNiJ9.N8RH0U5ROAykfouRQswu1uNXBIJPZnGwvP5t4FCsWk33BnOOGaXkRQWbi6PsCUEdHQh7CsVszTs1Uuizxisvug
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/160/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Fri, 04 Nov 2022 13:51:44 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1016
+
+{"code":200,"msg":"成功","data":{"total":8,"question":{"id":11054,"name":"当你进行极光5终端故障排障时，需要登录终端，但你发现可以Ping通，但无法成功telnet终端上，你将怎么做","type":1,"sid":26,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152081,"name":"B","value":"通过OMC对该终端绑定telnet","qId":11054,"isTrue":null,"sort":0,"pic":""},{"id":152082,"name":"C","value":"通过自治后台绑定telnet","qId":11054,"isTrue":null,"sort":0,"pic":""},{"id":152080,"name":"A","value":"重启终端","qId":11054,"isTrue":null,"sort":0,"pic":""},{"id":152084,"name":"E","value":"使用ssh登录该终端","qId":11054,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":54288,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"极光5","keywordTwo":"视联网","keywordThree":"终端","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjkzOTg4MTdmLWQ3YjAtNGI5MC04Mjc5LTYyMDQyNGVjMzBkNiJ9.N8RH0U5ROAykfouRQswu1uNXBIJPZnGwvP5t4FCsWk33BnOOGaXkRQWbi6PsCUEdHQh7CsVszTs1Uuizxisvug
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/160/page-frame.html
+
+{"questionId":11054,"moduleId":1,"functionId":3,"answer":"152084","isRight":1,"notAnswerIds":[152080,152081,152082],"answerIds":[152084],"sortIds":[152081,152082,152080,152084],"userTypeMd5":"94cad1b7Q9eabf19df7def1e73b94068d8a98a3efa","timestamp":1667570056766}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Fri, 04 Nov 2022 13:51:46 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 279
+
+{"code":200,"msg":"成功","data":[{"id":152081,"isTrue":1,"value":"通过OMC对该终端绑定telnet"},{"id":152082,"isTrue":0,"value":"通过自治后台绑定telnet"},{"id":152080,"isTrue":0,"value":"重启终端"},{"id":152084,"isTrue":0,"value":"使用ssh登录该终端"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=0&pageNumber=5&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjkzOTg4MTdmLWQ3YjAtNGI5MC04Mjc5LTYyMDQyNGVjMzBkNiJ9.N8RH0U5ROAykfouRQswu1uNXBIJPZnGwvP5t4FCsWk33BnOOGaXkRQWbi6PsCUEdHQh7CsVszTs1Uuizxisvug
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/160/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Fri, 04 Nov 2022 13:51:47 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 819
+
+{"code":200,"msg":"成功","data":{"total":8,"question":{"id":11059,"name":"启明2适配器电源供电电压","type":1,"sid":51,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152100,"name":"B","value":"5V","qId":11059,"isTrue":null,"sort":0,"pic":""},{"id":152102,"name":"D","value":"24V","qId":11059,"isTrue":null,"sort":0,"pic":""},{"id":152099,"name":"A","value":"12V","qId":11059,"isTrue":null,"sort":0,"pic":""},{"id":152103,"name":"E","value":"36V","qId":11059,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":53932,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"电流","keywordTwo":"电压","keywordThree":"启明2","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjkzOTg4MTdmLWQ3YjAtNGI5MC04Mjc5LTYyMDQyNGVjMzBkNiJ9.N8RH0U5ROAykfouRQswu1uNXBIJPZnGwvP5t4FCsWk33BnOOGaXkRQWbi6PsCUEdHQh7CsVszTs1Uuizxisvug
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/160/page-frame.html
+
+{"questionId":11059,"moduleId":1,"functionId":3,"answer":"152103","isRight":1,"notAnswerIds":[152099,152100,152102],"answerIds":[152103],"sortIds":[152100,152102,152099,152103],"userTypeMd5":"6e58yb84L92467f856824d92e12d2f98054347c60e","timestamp":1667570058863}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Fri, 04 Nov 2022 13:51:48 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 191
+
+{"code":200,"msg":"成功","data":[{"id":152100,"isTrue":0,"value":"5V"},{"id":152102,"isTrue":0,"value":"24V"},{"id":152099,"isTrue":1,"value":"12V"},{"id":152103,"isTrue":0,"value":"36V"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=0&pageNumber=6&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjkzOTg4MTdmLWQ3YjAtNGI5MC04Mjc5LTYyMDQyNGVjMzBkNiJ9.N8RH0U5ROAykfouRQswu1uNXBIJPZnGwvP5t4FCsWk33BnOOGaXkRQWbi6PsCUEdHQh7CsVszTs1Uuizxisvug
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/160/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Fri, 04 Nov 2022 13:51:49 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 833
+
+{"code":200,"msg":"成功","data":{"total":8,"question":{"id":11061,"name":"x86服务器ATX电源PS-ON信号是第几脚？","type":1,"sid":51,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152109,"name":"A","value":"8PIN","qId":11061,"isTrue":null,"sort":0,"pic":""},{"id":152111,"name":"C","value":"12PIN","qId":11061,"isTrue":null,"sort":0,"pic":""},{"id":152112,"name":"D","value":"14PIN","qId":11061,"isTrue":null,"sort":0,"pic":""},{"id":152113,"name":"E","value":"16PIN","qId":11061,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":53929,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"电","keywordTwo":"源","keywordThree":"电压","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjkzOTg4MTdmLWQ3YjAtNGI5MC04Mjc5LTYyMDQyNGVjMzBkNiJ9.N8RH0U5ROAykfouRQswu1uNXBIJPZnGwvP5t4FCsWk33BnOOGaXkRQWbi6PsCUEdHQh7CsVszTs1Uuizxisvug
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/160/page-frame.html
+
+{"questionId":11061,"moduleId":1,"functionId":3,"answer":"152113","isRight":1,"notAnswerIds":[152109,152111,152112],"answerIds":[152113],"sortIds":[152109,152111,152112,152113],"userTypeMd5":"dca7x842L3e416aaf3148e9503e37da09f00545775","timestamp":1667570060881}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Fri, 04 Nov 2022 13:51:50 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 199
+
+{"code":200,"msg":"成功","data":[{"id":152109,"isTrue":0,"value":"8PIN"},{"id":152111,"isTrue":0,"value":"12PIN"},{"id":152112,"isTrue":1,"value":"14PIN"},{"id":152113,"isTrue":0,"value":"16PIN"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=0&pageNumber=7&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjkzOTg4MTdmLWQ3YjAtNGI5MC04Mjc5LTYyMDQyNGVjMzBkNiJ9.N8RH0U5ROAykfouRQswu1uNXBIJPZnGwvP5t4FCsWk33BnOOGaXkRQWbi6PsCUEdHQh7CsVszTs1Uuizxisvug
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/160/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Fri, 04 Nov 2022 13:51:51 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 815
+
+{"code":200,"msg":"成功","data":{"total":8,"question":{"id":11065,"name":"330电阻的阻值为","type":1,"sid":51,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152132,"name":"D","value":"3330Ω","qId":11065,"isTrue":null,"sort":0,"pic":""},{"id":152133,"name":"E","value":"3300Ω","qId":11065,"isTrue":null,"sort":0,"pic":""},{"id":152130,"name":"B","value":"3.3Ω","qId":11065,"isTrue":null,"sort":0,"pic":""},{"id":152131,"name":"C","value":"33Ω","qId":11065,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":53923,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"电阻","keywordTwo":"电压","keywordThree":"电流","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjkzOTg4MTdmLWQ3YjAtNGI5MC04Mjc5LTYyMDQyNGVjMzBkNiJ9.N8RH0U5ROAykfouRQswu1uNXBIJPZnGwvP5t4FCsWk33BnOOGaXkRQWbi6PsCUEdHQh7CsVszTs1Uuizxisvug
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/160/page-frame.html
+
+{"questionId":11065,"moduleId":1,"functionId":3,"answer":"152131","isRight":1,"notAnswerIds":[152130,152132,152133],"answerIds":[152131],"sortIds":[152132,152133,152130,152131],"userTypeMd5":"9e67acf5Qae39bda72f4129ef7b3ecf5af58e4f197","timestamp":1667570063365}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Fri, 04 Nov 2022 13:51:53 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 201
+
+{"code":200,"msg":"成功","data":[{"id":152132,"isTrue":0,"value":"3330Ω"},{"id":152133,"isTrue":0,"value":"3300Ω"},{"id":152130,"isTrue":0,"value":"3.3Ω"},{"id":152131,"isTrue":1,"value":"33Ω"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=0&pageNumber=8&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjkzOTg4MTdmLWQ3YjAtNGI5MC04Mjc5LTYyMDQyNGVjMzBkNiJ9.N8RH0U5ROAykfouRQswu1uNXBIJPZnGwvP5t4FCsWk33BnOOGaXkRQWbi6PsCUEdHQh7CsVszTs1Uuizxisvug
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/160/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Fri, 04 Nov 2022 13:51:54 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 816
+
+{"code":200,"msg":"成功","data":{"total":8,"question":{"id":11067,"name":"电阻在主板上的标识为（）？","type":1,"sid":51,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152142,"name":"D","value":"R","qId":11067,"isTrue":null,"sort":0,"pic":""},{"id":152141,"name":"C","value":"F","qId":11067,"isTrue":null,"sort":0,"pic":""},{"id":152140,"name":"B","value":"U","qId":11067,"isTrue":null,"sort":0,"pic":""},{"id":152139,"name":"A","value":"C","qId":11067,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":53920,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"电阻","keywordTwo":"主板","keywordThree":"电容","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjkzOTg4MTdmLWQ3YjAtNGI5MC04Mjc5LTYyMDQyNGVjMzBkNiJ9.N8RH0U5ROAykfouRQswu1uNXBIJPZnGwvP5t4FCsWk33BnOOGaXkRQWbi6PsCUEdHQh7CsVszTs1Uuizxisvug
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/160/page-frame.html
+
+{"questionId":11067,"moduleId":1,"functionId":3,"answer":"152139","isRight":1,"notAnswerIds":[152140,152141,152142],"answerIds":[152139],"sortIds":[152142,152141,152140,152139],"userTypeMd5":"194fnea3B5581f8d22c3cfd256e522fdfa0402e383","timestamp":1667570065807}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Fri, 04 Nov 2022 13:51:55 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 184
+
+{"code":200,"msg":"成功","data":[{"id":152142,"isTrue":1,"value":"R"},{"id":152141,"isTrue":0,"value":"F"},{"id":152140,"isTrue":0,"value":"U"},{"id":152139,"isTrue":0,"value":"C"}]}
+
+------------------------------------------------------------------
+

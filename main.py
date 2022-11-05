@@ -76,9 +76,9 @@ def getFilterQuestionAnswerMatch(choiceFilterFile):
     startLineNum = lines.index(question1)
 
     for i in range(startLineNum + 1, len(lines)):
-        if lines[i].find("question") != -1:
+        if lines[i].find("question") != -1 and lines[i].find('"isTrue":null') != -1:    # 提取题干
             question1 = lines[i]
-        else:
+        elif lines[i].find('"isTrue":1,"value"') != -1: # 提取答案
             listOut.append(question1.strip().replace('\\n', '') + "\n")
             question1 = ""
             answer = lines[i]
@@ -96,7 +96,7 @@ def getFilterQuestionAnswerMatch(choiceFilterFile):
 
     if choiceQuestionNumInput != choiceQuestionNumOutput:
         resultFlag = False
-        Log("ResultLineNum Error!!! choiceQuestionNumInput: {}, choiceQuestionNumOutput: {1}".format(choiceQuestionNumInput, choiceQuestionNumOutput))
+        Log("ResultLineNum Error!!! choiceQuestionNumInput: {}, choiceQuestionNumOutput: {}".format(choiceQuestionNumInput, choiceQuestionNumOutput))
     else:
         resultFlag = True
 
@@ -152,7 +152,7 @@ def getGenerateQuesAndAnsToText(choiceFilterFile, choiceStrList):
                 answers = json.loads(choiceStr)
                 for answer in answers.get("data"):
                     if(answer.get("isTrue") == 1):
-                         answerStr += answer.get("value") + "   "
+                         answerStr += answer.get("value") + "     "
 
                 # 填入全局字典dictQuestionAndAnswer，格式{str:list}，list中存放选项和答案，分别为list[0]和list[1]
                 if len(listChoiceOptAndAns) == 0:
@@ -216,6 +216,7 @@ def getSingleChoiceFileDistinct():
             if len(listValue) == 2:
                 fw.write(listValue[0].strip() + "\n")
                 fw.write(listValue[1].strip() + "\n")
+                fw.write("\n")
             else:
                 Log("gl_dictSingleChoice's value is incomplete")
 
@@ -255,6 +256,7 @@ def getMultiChoiceFileDistinct():
             if len(listValue) == 2:
                 fw.write(listValue[0].strip() + "\n")
                 fw.write(listValue[1].strip() + "\n")
+                fw.write("\n")
             else:
                 Log("gl_dictMultiChoice's value is incomplete")
 
@@ -400,15 +402,13 @@ def main():
         # 单选题去重
         getSingleChoiceFileDistinct()
     
-    Log("*******************************************************************************")
+    Log("***********************************************************************************")
     
     if multiChoiceFlag == True:
         # 多选题去重
         getMultiChoiceFileDistinct()
     
 
-
-    
 
 if __name__ == "__main__":
     main()
