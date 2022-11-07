@@ -1,0 +1,1149 @@
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=5&functionId=5&questionType=1&pageNumber=1&refresh=1 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:20:22 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 848
+
+{"code":200,"msg":"成功","data":{"total":6,"question":{"id":11068,"name":"以下终端支持USB摄像头采集的是","type":1,"sid":49,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152144,"name":"A","value":"启明2","qId":11068,"isTrue":null,"sort":0,"pic":""},{"id":152146,"name":"C","value":"极光4K","qId":11068,"isTrue":null,"sort":0,"pic":""},{"id":152147,"name":"D","value":"极光5","qId":11068,"isTrue":null,"sort":0,"pic":""},{"id":152148,"name":"E","value":"极光5M","qId":11068,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":54350,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"USB摄像","keywordTwo":"终端","keywordThree":"采集","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+{"questionId":11068,"moduleId":5,"functionId":3,"answer":"152148","isRight":1,"notAnswerIds":[152144,152146,152147],"answerIds":[152148],"sortIds":[152144,152146,152147,152148],"userTypeMd5":"8bbclb4dV4dafe2b1401c229c5f4425e00c98a5265","timestamp":1667802177109}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:20:25 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 210
+
+{"code":200,"msg":"成功","data":[{"id":152144,"isTrue":1,"value":"启明2"},{"id":152146,"isTrue":0,"value":"极光4K"},{"id":152147,"isTrue":0,"value":"极光5"},{"id":152148,"isTrue":0,"value":"极光5M"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=5&functionId=5&questionType=1&pageNumber=2&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:20:26 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 976
+
+{"code":200,"msg":"成功","data":{"total":6,"question":{"id":11070,"name":"公司向电信网络运营商申请到了一段110.112.123.0/24的IP地段，为了更合理的使用IP地址，你要给一个拥有24台服务器的工作组分配一个（）位的子网掩码。","type":1,"sid":26,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152151,"name":"A","value":"29","qId":11070,"isTrue":null,"sort":0,"pic":""},{"id":152155,"name":"E","value":"28","qId":11070,"isTrue":null,"sort":0,"pic":""},{"id":152153,"name":"C","value":"24","qId":11070,"isTrue":null,"sort":0,"pic":""},{"id":152154,"name":"D","value":"27","qId":11070,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":54342,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"子网","keywordTwo":"IP","keywordThree":"网络","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+{"questionId":11070,"moduleId":5,"functionId":3,"answer":"152153","isRight":1,"notAnswerIds":[152151,152154,152155],"answerIds":[152153],"sortIds":[152151,152155,152153,152154],"userTypeMd5":"1ed3db0bP22b7b039fe49c6c8f81119acc52c919a5","timestamp":1667802182529}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:20:30 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 188
+
+{"code":200,"msg":"成功","data":[{"id":152151,"isTrue":0,"value":"29"},{"id":152155,"isTrue":0,"value":"28"},{"id":152153,"isTrue":0,"value":"24"},{"id":152154,"isTrue":1,"value":"27"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=5&functionId=5&questionType=1&pageNumber=3&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:20:31 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 863
+
+{"code":200,"msg":"成功","data":{"total":6,"question":{"id":11071,"name":"给定10.0.10.63/27代表是一个（）地址","type":1,"sid":26,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152159,"name":"D","value":"回环地址","qId":11071,"isTrue":null,"sort":0,"pic":""},{"id":152160,"name":"E","value":"组播地址","qId":11071,"isTrue":null,"sort":0,"pic":""},{"id":152157,"name":"B","value":"网络地址","qId":11071,"isTrue":null,"sort":0,"pic":""},{"id":152158,"name":"C","value":"广播地址","qId":11071,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":54341,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"ip","keywordTwo":"网络","keywordThree":"子网","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+{"questionId":11071,"moduleId":5,"functionId":3,"answer":"152158","isRight":1,"notAnswerIds":[152157,152159,152160],"answerIds":[152158],"sortIds":[152159,152160,152157,152158],"userTypeMd5":"c9bds347B8f97b086d661322645446388dac4de721","timestamp":1667802185424}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:20:33 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 228
+
+{"code":200,"msg":"成功","data":[{"id":152159,"isTrue":0,"value":"回环地址"},{"id":152160,"isTrue":0,"value":"组播地址"},{"id":152157,"isTrue":0,"value":"网络地址"},{"id":152158,"isTrue":1,"value":"广播地址"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=5&functionId=5&questionType=1&pageNumber=4&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:20:34 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 885
+
+{"code":200,"msg":"成功","data":{"total":6,"question":{"id":11073,"name":"对一个B 类网段进行子网划分，如果子网掩码是19 位，那么最多能够划分的子网数为()","type":1,"sid":26,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152168,"name":"C","value":"8","qId":11073,"isTrue":null,"sort":0,"pic":""},{"id":152167,"name":"B","value":"4","qId":11073,"isTrue":null,"sort":0,"pic":""},{"id":152166,"name":"A","value":"2","qId":11073,"isTrue":null,"sort":0,"pic":""},{"id":152170,"name":"E","value":"9","qId":11073,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":54339,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"子网","keywordTwo":"IP","keywordThree":"网络","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+{"questionId":11073,"moduleId":5,"functionId":3,"answer":"152166","isRight":1,"notAnswerIds":[152167,152168,152170],"answerIds":[152166],"sortIds":[152168,152167,152166,152170],"userTypeMd5":"1701oa7dN57c21d97d1d267d13df537210ed3d92b3","timestamp":1667802188100}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:20:36 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 184
+
+{"code":200,"msg":"成功","data":[{"id":152168,"isTrue":1,"value":"8"},{"id":152167,"isTrue":0,"value":"4"},{"id":152166,"isTrue":0,"value":"2"},{"id":152170,"isTrue":0,"value":"9"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=5&functionId=5&questionType=1&pageNumber=5&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:20:36 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 977
+
+{"code":200,"msg":"成功","data":{"total":6,"question":{"id":11075,"name":"怎么在H3C S7503EM交换机SWA上G0/0/8接口下禁用STP","type":1,"sid":26,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152177,"name":"B","value":"[SWA-GigabitEthernet0/0/8]undo stp enable","qId":11075,"isTrue":null,"sort":0,"pic":""},{"id":152179,"name":"D","value":"[SWA-GigabitEthernet0/0/8] disable stp","qId":11075,"isTrue":null,"sort":0,"pic":""},{"id":152178,"name":"C","value":"[SWA-GigabitEthernet0/0/8] stp disable","qId":11075,"isTrue":null,"sort":0,"pic":""},{"id":152176,"name":"A","value":"[SWA]stp disable  int g0/0/8","qId":11075,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":54337,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"stp","keywordTwo":"网络","keywordThree":"交换机","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+{"questionId":11075,"moduleId":5,"functionId":3,"answer":"152178","isRight":1,"notAnswerIds":[152176,152177,152179],"answerIds":[152178],"sortIds":[152177,152179,152178,152176],"userTypeMd5":"9217me9eM1061990ad97ab42d0a6b157e5a02eb295","timestamp":1667802190966}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:20:38 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 325
+
+{"code":200,"msg":"成功","data":[{"id":152177,"isTrue":1,"value":"[SWA-GigabitEthernet0/0/8]undo stp enable"},{"id":152179,"isTrue":0,"value":"[SWA-GigabitEthernet0/0/8] disable stp"},{"id":152178,"isTrue":0,"value":"[SWA-GigabitEthernet0/0/8] stp disable"},{"id":152176,"isTrue":0,"value":"[SWA]stp disable  int g0/0/8"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=5&functionId=5&questionType=1&pageNumber=6&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:20:39 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 1084
+
+{"code":200,"msg":"成功","data":{"total":6,"question":{"id":11076,"name":"H3C交换机SWA 的端口g1/0/24 已经配置成为Trunk 端口类型。通过（）命令可以使此端口允许VLAN2 和\nVLAN5 通过","type":1,"sid":26,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152184,"name":"D","value":"[SWA-GigabitEthernet1/0/1]undo port trunk permit vlan 2","qId":11076,"isTrue":null,"sort":0,"pic":""},{"id":152182,"name":"B","value":"[SWA]undo port trunk permit vlan 1","qId":11076,"isTrue":null,"sort":0,"pic":""},{"id":152183,"name":"C","value":"[SWA-GigabitEthernet1/0/1]port trunk permit vlan 2 5","qId":11076,"isTrue":null,"sort":0,"pic":""},{"id":152181,"name":"A","value":"[SWA]port trunk permit vlan 2 5","qId":11076,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":54335,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"trunk","keywordTwo":"交换机","keywordThree":"网络","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+{"questionId":11076,"moduleId":5,"functionId":3,"answer":"152182","isRight":1,"notAnswerIds":[152181,152183,152184],"answerIds":[152182],"sortIds":[152184,152182,152183,152181],"userTypeMd5":"e9ecm7a6J431ff1ff7af5023b93d12d97e8b553b9d","timestamp":1667802193760}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:20:41 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 352
+
+{"code":200,"msg":"成功","data":[{"id":152184,"isTrue":0,"value":"[SWA-GigabitEthernet1/0/1]undo port trunk permit vlan 2"},{"id":152182,"isTrue":0,"value":"[SWA]undo port trunk permit vlan 1"},{"id":152183,"isTrue":1,"value":"[SWA-GigabitEthernet1/0/1]port trunk permit vlan 2 5"},{"id":152181,"isTrue":0,"value":"[SWA]port trunk permit vlan 2 5"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/index/getNotPracticeQuestionCount?moduleId=5 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:20:44 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 85
+
+{"code":200,"msg":"成功","data":{"donePracticeCount":2235,"notPracticeCount":2524}}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/index/getNotPracticeQuestionCount?moduleId=1 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:21:23 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 83
+
+{"code":200,"msg":"成功","data":{"donePracticeCount":6050,"notPracticeCount":10}}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=0&pageNumber=1&refresh=1 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/index/getNotPracticeQuestionCount?moduleId=1 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:21:40 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 83
+
+{"code":200,"msg":"成功","data":{"donePracticeCount":6050,"notPracticeCount":10}}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/index/getNotPracticeQuestionCount?moduleId=2 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:21:39 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 81
+
+{"code":200,"msg":"成功","data":{"donePracticeCount":931,"notPracticeCount":0}}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/index/getNotPracticeQuestionCount?moduleId=1 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:21:48 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 83
+
+{"code":200,"msg":"成功","data":{"donePracticeCount":6050,"notPracticeCount":10}}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=1&functionId=5&questionType=0&pageNumber=1&refresh=1 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/index/getNotPracticeQuestionCount?moduleId=1 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:22:23 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 83
+
+{"code":200,"msg":"成功","data":{"donePracticeCount":6050,"notPracticeCount":10}}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/index/getNotPracticeQuestionCount?moduleId=3 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:22:20 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 83
+
+{"code":200,"msg":"成功","data":{"donePracticeCount":3876,"notPracticeCount":10}}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=3&functionId=5&questionType=0&pageNumber=1&refresh=1 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:22:22 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 849
+
+{"code":200,"msg":"成功","data":{"total":10,"question":{"id":11068,"name":"以下终端支持USB摄像头采集的是","type":1,"sid":49,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152146,"name":"C","value":"极光4K","qId":11068,"isTrue":null,"sort":0,"pic":""},{"id":152144,"name":"A","value":"启明2","qId":11068,"isTrue":null,"sort":0,"pic":""},{"id":152148,"name":"E","value":"极光5M","qId":11068,"isTrue":null,"sort":0,"pic":""},{"id":152147,"name":"D","value":"极光5","qId":11068,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":54350,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"USB摄像","keywordTwo":"终端","keywordThree":"采集","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=3&functionId=5&questionType=1&pageNumber=1&refresh=1 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:22:26 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 848
+
+{"code":200,"msg":"成功","data":{"total":6,"question":{"id":11068,"name":"以下终端支持USB摄像头采集的是","type":1,"sid":49,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152148,"name":"E","value":"极光5M","qId":11068,"isTrue":null,"sort":0,"pic":""},{"id":152146,"name":"C","value":"极光4K","qId":11068,"isTrue":null,"sort":0,"pic":""},{"id":152145,"name":"B","value":"启明3","qId":11068,"isTrue":null,"sort":0,"pic":""},{"id":152144,"name":"A","value":"启明2","qId":11068,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":54350,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"USB摄像","keywordTwo":"终端","keywordThree":"采集","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+{"questionId":11068,"moduleId":3,"functionId":3,"answer":"152145","isRight":1,"notAnswerIds":[152144,152146,152148],"answerIds":[152145],"sortIds":[152148,152146,152145,152144],"userTypeMd5":"3265k5b7T57b3f2500b4b26ab883a1bea5c430e5ad","timestamp":1667802301614}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:22:29 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 210
+
+{"code":200,"msg":"成功","data":[{"id":152148,"isTrue":0,"value":"极光5M"},{"id":152146,"isTrue":0,"value":"极光4K"},{"id":152145,"isTrue":0,"value":"启明3"},{"id":152144,"isTrue":1,"value":"启明2"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=3&functionId=5&questionType=1&pageNumber=2&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:22:30 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 976
+
+{"code":200,"msg":"成功","data":{"total":6,"question":{"id":11070,"name":"公司向电信网络运营商申请到了一段110.112.123.0/24的IP地段，为了更合理的使用IP地址，你要给一个拥有24台服务器的工作组分配一个（）位的子网掩码。","type":1,"sid":26,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152151,"name":"A","value":"29","qId":11070,"isTrue":null,"sort":0,"pic":""},{"id":152155,"name":"E","value":"28","qId":11070,"isTrue":null,"sort":0,"pic":""},{"id":152154,"name":"D","value":"27","qId":11070,"isTrue":null,"sort":0,"pic":""},{"id":152153,"name":"C","value":"24","qId":11070,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":54342,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"子网","keywordTwo":"IP","keywordThree":"网络","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+{"questionId":11070,"moduleId":3,"functionId":3,"answer":"152154","isRight":1,"notAnswerIds":[152151,152153,152155],"answerIds":[152154],"sortIds":[152151,152155,152154,152153],"userTypeMd5":"9200w9ceJ2a23aac45d27f766d21acfd6214894de3","timestamp":1667802306349}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:22:34 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 188
+
+{"code":200,"msg":"成功","data":[{"id":152151,"isTrue":0,"value":"29"},{"id":152155,"isTrue":0,"value":"28"},{"id":152154,"isTrue":1,"value":"27"},{"id":152153,"isTrue":0,"value":"24"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=3&functionId=5&questionType=1&pageNumber=3&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:22:34 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 863
+
+{"code":200,"msg":"成功","data":{"total":6,"question":{"id":11071,"name":"给定10.0.10.63/27代表是一个（）地址","type":1,"sid":26,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152159,"name":"D","value":"回环地址","qId":11071,"isTrue":null,"sort":0,"pic":""},{"id":152157,"name":"B","value":"网络地址","qId":11071,"isTrue":null,"sort":0,"pic":""},{"id":152158,"name":"C","value":"广播地址","qId":11071,"isTrue":null,"sort":0,"pic":""},{"id":152156,"name":"A","value":"主机地址","qId":11071,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":54341,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"ip","keywordTwo":"网络","keywordThree":"子网","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+{"questionId":11071,"moduleId":3,"functionId":3,"answer":"152156","isRight":1,"notAnswerIds":[152157,152158,152159],"answerIds":[152156],"sortIds":[152159,152157,152158,152156],"userTypeMd5":"de49q582W22386689fd29832377a5627b74fd074d2","timestamp":1667802308400}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:22:36 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 228
+
+{"code":200,"msg":"成功","data":[{"id":152159,"isTrue":0,"value":"回环地址"},{"id":152157,"isTrue":0,"value":"网络地址"},{"id":152158,"isTrue":1,"value":"广播地址"},{"id":152156,"isTrue":0,"value":"主机地址"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=3&functionId=5&questionType=1&pageNumber=4&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:22:37 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 885
+
+{"code":200,"msg":"成功","data":{"total":6,"question":{"id":11073,"name":"对一个B 类网段进行子网划分，如果子网掩码是19 位，那么最多能够划分的子网数为()","type":1,"sid":26,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152168,"name":"C","value":"8","qId":11073,"isTrue":null,"sort":0,"pic":""},{"id":152170,"name":"E","value":"9","qId":11073,"isTrue":null,"sort":0,"pic":""},{"id":152167,"name":"B","value":"4","qId":11073,"isTrue":null,"sort":0,"pic":""},{"id":152166,"name":"A","value":"2","qId":11073,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":54339,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"子网","keywordTwo":"IP","keywordThree":"网络","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+{"questionId":11073,"moduleId":3,"functionId":3,"answer":"152167","isRight":1,"notAnswerIds":[152166,152168,152170],"answerIds":[152167],"sortIds":[152168,152170,152167,152166],"userTypeMd5":"bd74hbe4C5e42f74b50957105c69735d22794819b6","timestamp":1667802310730}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:22:38 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 184
+
+{"code":200,"msg":"成功","data":[{"id":152168,"isTrue":1,"value":"8"},{"id":152170,"isTrue":0,"value":"9"},{"id":152167,"isTrue":0,"value":"4"},{"id":152166,"isTrue":0,"value":"2"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=3&functionId=5&questionType=1&pageNumber=5&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:22:39 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 977
+
+{"code":200,"msg":"成功","data":{"total":6,"question":{"id":11075,"name":"怎么在H3C S7503EM交换机SWA上G0/0/8接口下禁用STP","type":1,"sid":26,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152176,"name":"A","value":"[SWA]stp disable  int g0/0/8","qId":11075,"isTrue":null,"sort":0,"pic":""},{"id":152178,"name":"C","value":"[SWA-GigabitEthernet0/0/8] stp disable","qId":11075,"isTrue":null,"sort":0,"pic":""},{"id":152179,"name":"D","value":"[SWA-GigabitEthernet0/0/8] disable stp","qId":11075,"isTrue":null,"sort":0,"pic":""},{"id":152177,"name":"B","value":"[SWA-GigabitEthernet0/0/8]undo stp enable","qId":11075,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":54337,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"stp","keywordTwo":"网络","keywordThree":"交换机","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+{"questionId":11075,"moduleId":3,"functionId":3,"answer":"152179","isRight":1,"notAnswerIds":[152176,152177,152178],"answerIds":[152179],"sortIds":[152176,152178,152179,152177],"userTypeMd5":"7d39fbb8Pc4c8a31749293b2bcaeacfb206d1ecdc7","timestamp":1667802312834}
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:22:40 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 325
+
+{"code":200,"msg":"成功","data":[{"id":152176,"isTrue":0,"value":"[SWA]stp disable  int g0/0/8"},{"id":152178,"isTrue":0,"value":"[SWA-GigabitEthernet0/0/8] stp disable"},{"id":152179,"isTrue":0,"value":"[SWA-GigabitEthernet0/0/8] disable stp"},{"id":152177,"isTrue":1,"value":"[SWA-GigabitEthernet0/0/8]undo stp enable"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=3&functionId=5&questionType=1&pageNumber=6&refresh=0 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:22:41 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 1102
+
+{"code":200,"msg":"成功","data":{"total":6,"question":{"id":11076,"name":"H3C交换机SWA 的端口g1/0/24 已经配置成为Trunk 端口类型。通过（）命令可以使此端口允许VLAN2 和\nVLAN5 通过","type":1,"sid":26,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152183,"name":"C","value":"[SWA-GigabitEthernet1/0/1]port trunk permit vlan 2 5","qId":11076,"isTrue":null,"sort":0,"pic":""},{"id":152184,"name":"D","value":"[SWA-GigabitEthernet1/0/1]undo port trunk permit vlan 2","qId":11076,"isTrue":null,"sort":0,"pic":""},{"id":152181,"name":"A","value":"[SWA]port trunk permit vlan 2 5","qId":11076,"isTrue":null,"sort":0,"pic":""},{"id":152185,"name":"E","value":"[SWA-GigabitEthernet1/0/1]port-trunk permit vlan 2 5","qId":11076,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":54335,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"trunk","keywordTwo":"交换机","keywordThree":"网络","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+POST https://wx.visionverainfo.com/api/bqc/noAuth/disorder/saveBrushQuestionRecord HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+Content-Length: 262
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+{"questionId":11076,"moduleId":3,"functionId":3,"answer":"152184","isRight":1,"notAnswerIds":[152181,152183,152185],"answerIds":[152184],"sortIds":[152183,152184,152181,152185],"userTypeMd5":"b3a5tecaQfc6f70278916afd5ac387a3a3a62b5820","timestamp":1667802315019}
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:22:43 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 370
+
+{"code":200,"msg":"成功","data":[{"id":152183,"isTrue":1,"value":"[SWA-GigabitEthernet1/0/1]port trunk permit vlan 2 5"},{"id":152184,"isTrue":0,"value":"[SWA-GigabitEthernet1/0/1]undo port trunk permit vlan 2"},{"id":152181,"isTrue":0,"value":"[SWA]port trunk permit vlan 2 5"},{"id":152185,"isTrue":0,"value":"[SWA-GigabitEthernet1/0/1]port-trunk permit vlan 2 5"}]}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/index/getNotPracticeQuestionCount?moduleId=3 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:22:44 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 82
+
+{"code":200,"msg":"成功","data":{"donePracticeCount":3882,"notPracticeCount":4}}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/index/getNotPracticeQuestionCount?moduleId=4 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:22:47 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 82
+
+{"code":200,"msg":"成功","data":{"donePracticeCount":1061,"notPracticeCount":0}}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/index/getNotPracticeQuestionCount?moduleId=6 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:22:49 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 83
+
+{"code":200,"msg":"成功","data":{"donePracticeCount":4749,"notPracticeCount":10}}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/index/getNotPracticeQuestionCount?moduleId=5 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:22:52 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 85
+
+{"code":200,"msg":"成功","data":{"donePracticeCount":2235,"notPracticeCount":2524}}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/index/getNotPracticeQuestionCount?moduleId=6 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:22:54 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 83
+
+{"code":200,"msg":"成功","data":{"donePracticeCount":4749,"notPracticeCount":10}}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=6&functionId=5&questionType=0&pageNumber=1&refresh=1 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:23:02 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Expires: 0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 849
+
+{"code":200,"msg":"成功","data":{"total":10,"question":{"id":11068,"name":"以下终端支持USB摄像头采集的是","type":1,"sid":49,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152146,"name":"C","value":"极光4K","qId":11068,"isTrue":null,"sort":0,"pic":""},{"id":152147,"name":"D","value":"极光5","qId":11068,"isTrue":null,"sort":0,"pic":""},{"id":152148,"name":"E","value":"极光5M","qId":11068,"isTrue":null,"sort":0,"pic":""},{"id":152144,"name":"A","value":"启明2","qId":11068,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":54350,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"USB摄像","keywordTwo":"终端","keywordThree":"采集","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/personal/notPracticeQuestion?moduleId=6&functionId=5&questionType=1&pageNumber=1&refresh=1 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:23:12 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 847
+
+{"code":200,"msg":"成功","data":{"total":6,"question":{"id":11068,"name":"以下终端支持USB摄像头采集的是","type":1,"sid":49,"adUid":null,"status":1,"addTime":null,"analysis":"无","pid":8,"chapterId":null,"isDelete":null,"deleteTime":null,"score":0.0,"answerList":[{"id":152146,"name":"C","value":"极光4K","qId":11068,"isTrue":null,"sort":0,"pic":""},{"id":152145,"name":"B","value":"启明3","qId":11068,"isTrue":null,"sort":0,"pic":""},{"id":152144,"name":"A","value":"启明2","qId":11068,"isTrue":null,"sort":0,"pic":""},{"id":152147,"name":"D","value":"极光5","qId":11068,"isTrue":null,"sort":0,"pic":""}],"brushStatus":null,"rrcId":54350,"difficulty":null,"mustAnswer":null,"isCollect":0,"keywordOne":"USB摄像","keywordTwo":"终端","keywordThree":"采集","keywordFour":null,"keywordFive":null,"videoAnalysisUrl":null}}}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/index/getNotPracticeQuestionCount?moduleId=6 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:23:15 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 83
+
+{"code":200,"msg":"成功","data":{"donePracticeCount":4749,"notPracticeCount":10}}
+
+------------------------------------------------------------------
+
+GET https://wx.visionverainfo.com/api/bqc/noAuth/index/getNotPracticeQuestionCount?moduleId=5 HTTP/1.1
+Host: wx.visionverainfo.com
+Connection: keep-alive
+authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJlbXBsb3llZU51bSI6IlYwMDY1MjEiLCJsb2dpbl91c2VyX2tleSI6IjE2OTYxZmNiLWViYzgtNDRiOS05M2M4LWUwYWI0ODY4MmVhMCJ9.3PIhZINf8OVecoO0XiDJy93-Cjh_Ajs4kSOshVWFoBkj-x6OImSyoEFvYdep6O9kbSlAo62ymSlQtdj_yOaohw
+charset: utf-8
+User-Agent: Mozilla/5.0 (Linux; Android 9; SM-N976N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 MMWEBID/9670 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android
+content-type: application/json
+Accept-Encoding: gzip,compress,br,deflate
+Referer: https://servicewechat.com/wx0aae6fc7f8437219/161/page-frame.html
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Mon, 07 Nov 2022 06:23:17 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Length: 85
+
+{"code":200,"msg":"成功","data":{"donePracticeCount":2235,"notPracticeCount":2524}}
+
+------------------------------------------------------------------
+
