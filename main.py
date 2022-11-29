@@ -6,8 +6,8 @@ import hashlib
 import datetime
 import shutil
 
-gl_dictSingleChoice = {}
-gl_dictMultiChoice = {}
+gl_dictSingleChoice = {}    #单选题dict，用于题干去重，数据形式："题干":"选项+答案"
+gl_dictMultiChoice = {}     #多选题dict，用于题干去重，数据形式："题干":"选项+答案"
 gl_singleQuesDupNum = 0
 gl_multiQuesDupNum = 0
 gl_singleQuesAndAnsAllLineNum = 0
@@ -25,6 +25,10 @@ def Log(msg):
 
 
 def getFilterTextList():
+    """
+    获取单选题、多选题文件
+    """
+
     outputFileList = []
     outputFlag = False
 
@@ -53,6 +57,10 @@ def getFilterTextList():
 
 
 def getFilterQuestionAnswerMatch(choiceFilterFile):
+    """
+    剔除多余数据（只有题干没有答案），保证题干和答案的json数据一一映射
+    @prarm choiceFilterFile 过滤掉协议头后的文件路径
+    """
     choiceQuestionNumInput = 0
     choiceQuestionNumOutput = 0
 
@@ -106,6 +114,11 @@ def getFilterQuestionAnswerMatch(choiceFilterFile):
 
 
 def getGenerateQuesAndAnsToText(choiceFilterFile, choiceStrList):
+    """
+    从json提取题干、选项和答案，并以（题目 选项）\n答案的形式写入文件“XXX_题目与答案”中（有重复的题干），同时以“题目:选项+答案”的形式放入dict
+    @param choiceFilterFile 选择题Filter文件路径
+    @param choiceStrList 选择题
+    """
     global gl_dictSingleChoice
     global gl_dictMultiChoice
     global gl_singleQuesDupNum
@@ -130,7 +143,7 @@ def getGenerateQuesAndAnsToText(choiceFilterFile, choiceStrList):
         Log("questionType Error!!! questionType = {}".format(questionType))
         sys.exit(0)
 
-    currentPath = os.getcwd()
+    #currentPath = os.getcwd()
     with open(gl_fileOutputPath + outputChoiceFile, "w", encoding='UTF-8', newline='') as fw:
         for choiceStr in choiceStrList:
             if choiceStr.find("question") != -1:
@@ -193,6 +206,9 @@ def getGenerateQuesAndAnsToText(choiceFilterFile, choiceStrList):
 
 
 def getSingleChoiceFileDistinct():
+    """
+    单选题文件中的题干去重
+    """
     global gl_dictSingleChoice
     global gl_singleQuesDupNum
     global gl_singleQuesAndAnsAllLineNum
@@ -233,6 +249,9 @@ def getSingleChoiceFileDistinct():
 
 
 def getMultiChoiceFileDistinct():
+    """
+    多选题文件中题干去重
+    """
     global gl_dictMultiChoice
     global gl_multiQuesDupNum
     global gl_multiQuesAndAnsAllLineNum
@@ -343,7 +362,7 @@ def getStrMD5():
     #8c81eab9acbe2a2fbc8445fa4a9b15fd  都是这个
 """
 
-
+"""
 def test():
     list1 = ['a','b','c','d','a']
     list2 = [1,2,3,4,5]
@@ -374,7 +393,7 @@ def test1():
     print(gl_dictSingleChoice.keys(), gl_dictSingleChoice.values())
 
     print(gl_fileInputPath)
-
+"""
 
 def main():
     singleChoiceFlag = False
