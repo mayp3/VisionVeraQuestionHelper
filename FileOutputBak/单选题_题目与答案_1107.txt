@@ -1,24 +1,24 @@
-题目: 以下终端支持USB摄像头采集的是选项: 1.启明2	2.极光4K	3.极光5	4.极光5M
-答案: 启明2
-题目: 公司向电信网络运营商申请到了一段110.112.123.0/24的IP地段，为了更合理的使用IP地址，你要给一个拥有24台服务器的工作组分配一个（）位的子网掩码。选项: 1.29	2.28	3.24	4.27
-答案: 27
-题目: 给定10.0.10.63/27代表是一个（）地址选项: 1.回环地址	2.组播地址	3.网络地址	4.广播地址
-答案: 广播地址
-题目: 对一个B 类网段进行子网划分，如果子网掩码是19 位，那么最多能够划分的子网数为()选项: 1.8	2.4	3.2	4.9
-答案: 8
-题目: 怎么在H3C S7503EM交换机SWA上G0/0/8接口下禁用STP选项: 1.[SWA-GigabitEthernet0/0/8]undo stp enable	2.[SWA-GigabitEthernet0/0/8] disable stp	3.[SWA-GigabitEthernet0/0/8] stp disable	4.[SWA]stp disable  int g0/0/8
-答案: [SWA-GigabitEthernet0/0/8]undo stp enable
-题目: H3C交换机SWA 的端口g1/0/24 已经配置成为Trunk 端口类型。通过（）命令可以使此端口允许VLAN2 和VLAN5 通过选项: 1.[SWA-GigabitEthernet1/0/1]undo port trunk permit vlan 2	2.[SWA]undo port trunk permit vlan 1	3.[SWA-GigabitEthernet1/0/1]port trunk permit vlan 2 5	4.[SWA]port trunk permit vlan 2 5
-答案: [SWA-GigabitEthernet1/0/1]port trunk permit vlan 2 5
-题目: 以下终端支持USB摄像头采集的是选项: 1.极光5M	2.极光4K	3.启明3	4.启明2
-答案: 启明2
-题目: 公司向电信网络运营商申请到了一段110.112.123.0/24的IP地段，为了更合理的使用IP地址，你要给一个拥有24台服务器的工作组分配一个（）位的子网掩码。选项: 1.29	2.28	3.27	4.24
-答案: 27
-题目: 给定10.0.10.63/27代表是一个（）地址选项: 1.回环地址	2.网络地址	3.广播地址	4.主机地址
-答案: 广播地址
-题目: 对一个B 类网段进行子网划分，如果子网掩码是19 位，那么最多能够划分的子网数为()选项: 1.8	2.9	3.4	4.2
-答案: 8
-题目: 怎么在H3C S7503EM交换机SWA上G0/0/8接口下禁用STP选项: 1.[SWA]stp disable  int g0/0/8	2.[SWA-GigabitEthernet0/0/8] stp disable	3.[SWA-GigabitEthernet0/0/8] disable stp	4.[SWA-GigabitEthernet0/0/8]undo stp enable
-答案: [SWA-GigabitEthernet0/0/8]undo stp enable
-题目: H3C交换机SWA 的端口g1/0/24 已经配置成为Trunk 端口类型。通过（）命令可以使此端口允许VLAN2 和VLAN5 通过选项: 1.[SWA-GigabitEthernet1/0/1]port trunk permit vlan 2 5	2.[SWA-GigabitEthernet1/0/1]undo port trunk permit vlan 2	3.[SWA]port trunk permit vlan 2 5	4.[SWA-GigabitEthernet1/0/1]port-trunk permit vlan 2 5
-答案: [SWA-GigabitEthernet1/0/1]port trunk permit vlan 2 5
+以下终端支持USB摄像头采集的是
+启明2
+公司向电信网络运营商申请到了一段110.112.123.0/24的IP地段，为了更合理的使用IP地址，你要给一个拥有24台服务器的工作组分配一个（）位的子网掩码。
+27
+给定10.0.10.63/27代表是一个（）地址
+广播地址
+对一个B 类网段进行子网划分，如果子网掩码是19 位，那么最多能够划分的子网数为()
+8
+怎么在H3C S7503EM交换机SWA上G0/0/8接口下禁用STP
+[SWA-GigabitEthernet0/0/8]undo stp enable
+H3C交换机SWA 的端口g1/0/24 已经配置成为Trunk 端口类型。通过（）命令可以使此端口允许VLAN2 和VLAN5 通过
+[SWA-GigabitEthernet1/0/1]port trunk permit vlan 2 5
+以下终端支持USB摄像头采集的是
+启明2
+公司向电信网络运营商申请到了一段110.112.123.0/24的IP地段，为了更合理的使用IP地址，你要给一个拥有24台服务器的工作组分配一个（）位的子网掩码。
+27
+给定10.0.10.63/27代表是一个（）地址
+广播地址
+对一个B 类网段进行子网划分，如果子网掩码是19 位，那么最多能够划分的子网数为()
+8
+怎么在H3C S7503EM交换机SWA上G0/0/8接口下禁用STP
+[SWA-GigabitEthernet0/0/8]undo stp enable
+H3C交换机SWA 的端口g1/0/24 已经配置成为Trunk 端口类型。通过（）命令可以使此端口允许VLAN2 和VLAN5 通过
+[SWA-GigabitEthernet1/0/1]port trunk permit vlan 2 5

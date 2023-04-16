@@ -148,30 +148,31 @@ def getGenerateQuesAndAnsToText(choiceFilterFile, choiceStrList):
         for choiceStr in choiceStrList:
             if choiceStr.find("question") != -1:
                 question = json.loads(choiceStr)
-                questionTitle = "题目: " + question.get("data").get("question").get("name").strip() + "\n"
+                questionTitle = question.get("data").get("question").get("name").strip() + "\n"
                 answerList = question.get("data").get("question").get("answerList")
                 
                 option=['A','B','C','D','E','F','G','H']
-                i = 0
-                choiceOption = ""
-                for answer in answerList:
-                    choiceOption += option[i]
-                    choiceOption += "."
-                    choiceOption += answer.get("value")
-                    choiceOption += "\n"
-                    i += 1
-                jsonData = questionTitle + choiceOption
+                #i = 0
+                #choiceOption = ""
+                #for answer in answerList:
+                #    choiceOption += option[i]
+                #    choiceOption += "."
+                #    choiceOption += answer.get("value")
+                #    choiceOption += "\n"
+                #    i += 1
+                #jsonData = questionTitle + choiceOption
+                jsonData = questionTitle
             else:
-                answerStr = "答案: "
+                answerStr = ""
                 answers = json.loads(choiceStr)
                 for answer in answers.get("data"):
                     if(answer.get("isTrue") == 1):
-                         answerStr += answer.get("value") + "  |  "
-                answerStr = answerStr[:answerStr.rindex("  |  ")]
+                         answerStr += answer.get("value") + "||"
+                answerStr = answerStr[:answerStr.rindex("||")]
 
                 # 填入全局字典dictQuestionAndAnswer，格式{str:list}，list中存放选项和答案，分别为list[0]和list[1]
                 if len(listChoiceOptAndAns) == 0:
-                    listChoiceOptAndAns.append(choiceOption.strip())
+                    #listChoiceOptAndAns.append(choiceOption.strip())
                     listChoiceOptAndAns.append(answerStr.strip())
                 else:
                     Log("listChoiceOptAndAns isn't empty!!!")
@@ -226,14 +227,14 @@ def getSingleChoiceFileDistinct():
 
     with open(gl_fileDistinctOutputPath + "单选题_题目与答案_Distinct_" + timestamp + ".txt", "w", encoding='UTF-8', newline='') as fw:
         for key, listValue in gl_dictSingleChoice.items():
-            if key.strip().find("题目:") != -1:
-                fw.write(key.strip() + "\n")   # 题目和选项在同一行
-            else:
-                Log("gl_dictSingleChoice's key no have 题目")
+            #if key.strip().find("题目:") != -1:
+            fw.write(key.strip() + "<|>")
+            #else:
+            #    Log("gl_dictSingleChoice's key no have 题目")
 
-            if len(listValue) == 2:
+            if len(listValue) == 1:
                 fw.write(listValue[0].strip() + "\n")
-                fw.write(listValue[1].strip() + "\n")
+                #fw.write(listValue[1].strip() + "\n")
                 fw.write("\n")
             else:
                 Log("gl_dictSingleChoice's value is incomplete")
@@ -269,14 +270,14 @@ def getMultiChoiceFileDistinct():
 
     with open(gl_fileDistinctOutputPath + "多选题_题目与答案_Distinct_" + timestamp + ".txt", "w", encoding='UTF-8', newline='') as fw:
         for key, listValue in gl_dictMultiChoice.items():
-            if key.strip().find("题目:") != -1:
-                fw.write(key.strip() + "\n")   # 题目和选项在同一行
-            else:
-                Log("gl_dictMultiChoice's key no have 题目")
+            #if key.strip().find("题目:") != -1:
+            fw.write(key.strip() + "<|>")
+            #else:
+            #    Log("gl_dictMultiChoice's key no have 题目")
 
-            if len(listValue) == 2:
+            if len(listValue) == 1:
                 fw.write(listValue[0].strip() + "\n")
-                fw.write(listValue[1].strip() + "\n")
+                #fw.write(listValue[1].strip() + "\n")
                 fw.write("\n")
             else:
                 Log("gl_dictMultiChoice's value is incomplete")
