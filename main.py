@@ -8,10 +8,13 @@ import shutil
 
 gl_dictSingleChoice = {}    #单选题dict，用于题干去重，数据形式："题干":"选项+答案"
 gl_dictMultiChoice = {}     #多选题dict，用于题干去重，数据形式："题干":"选项+答案"
+gl_dictJudge = {}           #判断题dict，用于题干去重，数据形式："题干":"选项+答案"
 gl_singleQuesDupNum = 0
 gl_multiQuesDupNum = 0
+gl_judgeDupNum = 0
 gl_singleQuesAndAnsAllLineNum = 0
 gl_multiQuesAndAnsAllLineNum = 0
+gl_judgeQuesAndAnsAllLineNum = 0
 gl_fileInputPath            = os.getcwd() + "\\FileInput\\"
 gl_fileInputBakPath         = os.getcwd() + "\\FileInputBak\\"
 gl_fileFilterPath           = os.getcwd() + "\\FileFilter\\"
@@ -26,7 +29,7 @@ def Log(msg):
 
 def getFilterTextList():
     """
-    获取单选题、多选题文件
+    获取单选题、多选题、判断题文件
     """
 
     outputFileList = []
@@ -35,7 +38,7 @@ def getFilterTextList():
     for inputFileName in os.listdir(gl_fileInputPath):
         outputFlag = False
 
-        if inputFileName.find("选题_") != -1:
+        if inputFileName.find("选题_") != -1 or inputFileName.find("判断题_") != -1 :
             outputFileName = inputFileName[0:inputFileName.find("_")] + "_Filter" + inputFileName[inputFileName.rfind("_"):]
             with open(gl_fileInputPath + inputFileName, "r", encoding='UTF-8') as fr:
                 lines = fr.readlines()
@@ -56,20 +59,20 @@ def getFilterTextList():
         return outputFileList
 
 
-def getFilterQuestionAnswerMatch(choiceFilterFile):
+def getFilterQuestionAnswerMatch(questionFilterFile):
     """
     剔除多余数据（只有题干没有答案），保证题干和答案的json数据一一映射
-    @prarm choiceFilterFile 过滤掉协议头后的文件路径
+    @prarm questionFilterFile 过滤掉协议头后的文件路径
     """
-    choiceQuestionNumInput = 0
-    choiceQuestionNumOutput = 0
+    questionNumInput = 0
+    questionNumOutput = 0
 
-    # choiceFilterFile就是Filter文件
-    with open(choiceFilterFile, "r", encoding='UTF-8') as fr:
+    # questionFilterFile
+    with open(questionFilterFile, "r", encoding='UTF-8') as fr:
         lines = fr.readlines()
         for line in lines:
             if line.find('"isTrue":1') != -1:
-                choiceQuestionNumInput += 1
+                questionNumInput += 1
 
     question1 = ""
     answer = ""
@@ -96,56 +99,61 @@ def getFilterQuestionAnswerMatch(choiceFilterFile):
         if out.find("question") != -1:
             pass
         else:
-            choiceQuestionNumOutput += 1
+            questionNumOutput += 1
  
     # 考虑到原始文件开头是答案的情况下，即第一条有效数据不是question
-    if choiceQuestionNumInput == choiceQuestionNumOutput + 1:
-        choiceQuestionNumInput = choiceQuestionNumOutput
+    if questionNumInput == questionNumOutput + 1:
+        questionNumInput = questionNumOutput
 
-    if choiceQuestionNumInput != choiceQuestionNumOutput:
+    if questionNumInput != questionNumOutput:
         resultFlag = False
-        Log("ResultLineNum Error!!! choiceQuestionNumInput: {}, choiceQuestionNumOutput: {}".format(choiceQuestionNumInput, choiceQuestionNumOutput))
+        Log("ResultLineNum Error!!! questionNumInput: {}, questionNumOutput: {}".format(questionNumInput, questionNumOutput))
     else:
         resultFlag = True
 
     if resultFlag == True:
-        getGenerateQuesAndAnsToText(choiceFilterFile, listOut)
+        getGenerateQuesAndAnsToText(questionFilterFile, listOut)
 
 
 
-def getGenerateQuesAndAnsToText(choiceFilterFile, choiceStrList):
+def getGenerateQuesAndAnsToText(questionFilterFile, questionStrList):
     """
     从json提取题干、选项和答案，并以（题目 选项）\n答案的形式写入文件“XXX_题目与答案”中（有重复的题干），同时以“题目:选项+答案”的形式放入dict
-    @param choiceFilterFile 选择题Filter文件路径
-    @param choiceStrList 选择题
+    @param questionFilterFile 选择题Filter文件路径
+    @param questionStrList 题
     """
     global gl_dictSingleChoice
     global gl_dictMultiChoice
+    global gl_dictJudge
     global gl_singleQuesDupNum
     global gl_multiQuesDupNum
+    global gl_judgeDupNum
     global gl_singleQuesAndAnsAllLineNum
     global gl_multiQuesAndAnsAllLineNum
+    global gl_judgeQuesAndAnsAllLineNum
 
-    questionType = 0    # 0:单选题，1:多选题
+    questionType = 0    # 0:单选题，1:多选题，2:判断题
     jsonData = ""
     questionTitle = ""
     choiceOption = ""
     listChoiceOptAndAns = []
 
-    choiceFilterFileName = choiceFilterFile[choiceFilterFile.rfind("\\")+1:]    #获取文件名，不要"\"
+    choiceFilterFileName = questionFilterFile[questionFilterFile.rfind("\\")+1:]    #获取文件名，不要"\"
     outputChoiceFile = choiceFilterFileName[0:choiceFilterFileName.find("_")] + "_题目与答案" + choiceFilterFileName[choiceFilterFileName.rfind("_"):]
     
     if outputChoiceFile.find("单选题") != -1:
         questionType = 0
     elif outputChoiceFile.find("多选题") != -1:
         questionType = 1
+    elif outputChoiceFile.find("判断题") != -1:
+        questionType = 2
     else:
         Log("questionType Error!!! questionType = {}".format(questionType))
         sys.exit(0)
 
     #currentPath = os.getcwd()
     with open(gl_fileOutputPath + outputChoiceFile, "w", encoding='UTF-8', newline='') as fw:
-        for choiceStr in choiceStrList:
+        for choiceStr in questionStrList:
             if choiceStr.find("question") != -1:
                 question = json.loads(choiceStr)
                 questionTitle = question.get("data").get("question").get("name").strip() + "\n"
@@ -189,6 +197,12 @@ def getGenerateQuesAndAnsToText(choiceFilterFile, choiceStrList):
                         #Log("重复多选题目: " + questionTitle)
                     else:
                         gl_dictMultiChoice[questionTitle] = listChoiceOptAndAns
+                elif questionType == 2: #判断题
+                    if questionTitle in gl_dictJudge:
+                        gl_judgeDupNum += 1
+                        #Log("重复多选题目: " + questionTitle)
+                    else:
+                        gl_dictJudge[questionTitle] = listChoiceOptAndAns
                 listChoiceOptAndAns = []    # 不能用list.clear()，只能用[]，详情请百度list.clear()和list = []的区别
 
                 jsonData = answerStr.strip() + "\n"
@@ -197,11 +211,13 @@ def getGenerateQuesAndAnsToText(choiceFilterFile, choiceStrList):
                 gl_singleQuesAndAnsAllLineNum += 1
             elif questionType == 1: #多选题
                 gl_multiQuesAndAnsAllLineNum += 1
+            elif questionType == 2: #判断题
+                gl_judgeQuesAndAnsAllLineNum += 1
             fw.write(jsonData)
 
  
     try:
-        os.remove(choiceFilterFile)
+        os.remove(questionFilterFile)
     except:
         Log("Remove FilterFile Fail!!!")
 
@@ -292,6 +308,48 @@ def getMultiChoiceFileDistinct():
         Log("----------------多选题文件生成完成----------------")
     else:
         Log("----------------多选题文件生成失败----------------")
+
+def getJudgeFileDistinct():
+    """
+    判断题文件中的题干去重
+    """
+    global gl_dictJudge
+    global gl_judgeDupNum
+    global gl_judgeQuesAndAnsAllLineNum
+
+    curr_time = datetime.datetime.now()
+    timestamp = datetime.datetime.strftime(curr_time, '%m%d')
+
+    Log("----------------判断题文件生成开始----------------")
+
+    for file in os.listdir(gl_fileOutputPath):
+        if file.find("判断题_") != -1:
+            shutil.move(gl_fileOutputPath + file, gl_fileOutputBakPath + file)
+
+    with open(gl_fileDistinctOutputPath + "判断题_题目与答案_Distinct_" + timestamp + ".txt", "w", encoding='UTF-8', newline='') as fw:
+        for key, listValue in gl_dictJudge.items():
+            #if key.strip().find("题目:") != -1:
+            fw.write(key.strip() + "<|>")
+            #else:
+            #    Log("gl_dictJudge's key no have 题目")
+
+            if len(listValue) == 1:
+                fw.write(listValue[0].strip() + "\n")
+                #fw.write(listValue[1].strip() + "\n")
+                fw.write("\n")
+            else:
+                Log("gl_dictJudge's value is incomplete")
+
+    Log("JudgeQuesAndAnsAllLineNum = {}".format(gl_judgeQuesAndAnsAllLineNum))
+    Log("JudgeQuestionAndAnswerDupNum = {}".format(gl_judgeDupNum * 2))
+    Log("JudgeDistinctQuesNum = {}".format(len(gl_dictJudge.keys())))
+    Log("JudgeDistinctAnsNum = {}".format(len(gl_dictJudge.values())))
+
+    if gl_judgeQuesAndAnsAllLineNum == gl_judgeDupNum * 2 + len(gl_dictJudge.keys()) + len(gl_dictJudge.values()):
+        Log("----------------判断题文件生成成功----------------")
+        Log("----------------判断题文件生成完成----------------")
+    else:
+        Log("----------------判断题文件生成失败----------------")
 
 
 """   
@@ -401,6 +459,7 @@ def test1():
 def main():
     singleChoiceFlag = False
     multiChoiceFlag = False
+    judgeFlag = False
     #test()
     #test1()
     outputFileList = getFilterTextList()
@@ -410,6 +469,8 @@ def main():
                 singleChoiceFlag = True
             elif outputFile.find("多选题") != -1:
                 multiChoiceFlag = True
+            elif outputFile.find("判断题") != -1:
+                judgeFlag = True
             else:
                 Log("Error:Not Single OR Multi!!!")
                 sys.exit(0)
@@ -429,7 +490,12 @@ def main():
     if multiChoiceFlag == True:
         # 多选题去重
         getMultiChoiceFileDistinct()
+
+    Log("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&")
     
+    if judgeFlag == True:
+        # 判断题去重
+        getJudgeFileDistinct()
 
 
 if __name__ == "__main__":
