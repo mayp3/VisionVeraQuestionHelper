@@ -5,6 +5,7 @@ import json
 import hashlib
 import datetime
 import shutil
+import re
 
 gl_dictSingleChoice = {}    #单选题dict，用于题干去重，数据形式："题干":"选项+答案"
 gl_dictMultiChoice = {}     #多选题dict，用于题干去重，数据形式："题干":"选项+答案"
@@ -49,7 +50,7 @@ def getFilterTextList():
         outputFlag = False
 
         if inputFileName.find("选题_") != -1 or inputFileName.find("判断题_") != -1 or inputFileName.find("题目_") != -1 :
-            outputFileName = inputFileName[0:inputFileName.find("_")] + "_Filter" + inputFileName[inputFileName.rfind("_"):]
+            outputFileName = inputFileName[0:inputFileName.rfind("_")] + "_Filter" + inputFileName[inputFileName.rfind("_"):]
             with open(gl_fileInputPath + inputFileName, "r", encoding='UTF-8') as fr:
                 lines = fr.readlines()
             
@@ -123,7 +124,6 @@ def getFilterQuestionAnswerMatch(questionFilterFile):
 
     if resultFlag == True:
         getGenerateQuesAndAnsToText(questionFilterFile, listOut)
-
 
 
 def getGenerateQuesAndAnsToText(questionFilterFile, questionStrList):
@@ -426,10 +426,11 @@ def getFilterQuestionAnswerMatchGeneral(questionFilterFile):
         if lines[i].find("question") != -1 and lines[i].find('"isTrue":null') != -1:    # 提取题干
             question1 = lines[i]
         elif lines[i].find('"isTrue":1,"value"') != -1: # 提取答案
-            listOut.append(question1.strip().replace('\\n', '') + "\n")
+            #question1 = re.sub(re.compile("\n"), "\\n", question1)
+            listOut.append(question1)
             question1 = ""
             answer = lines[i]
-            listOut.append(answer.strip().replace('\\n', '') + "\n")
+            listOut.append(answer)
 
     for out in listOut:
         if out.find("question") != -1:
@@ -467,14 +468,15 @@ def getGenerateQuesAndAnsToTextGeneral(questionFilterFile, questionStrList):
     listAns = []
 
     filterFileName = questionFilterFile[questionFilterFile.rfind("\\")+1:]    #获取文件名，不要"\"
-    outputFile = filterFileName[0:filterFileName.find("_")] + "与答案_" + filterFileName[filterFileName.rfind("_"):]
+    outputFile = filterFileName[0:filterFileName.find("_")] + "与答案" + filterFileName[filterFileName.find("_"):filterFileName.find("_", -21)] + filterFileName[filterFileName.rfind("_"):]
 
     with open(gl_fileOutputPath + outputFile, "w", encoding='UTF-8', newline='') as fw:
         for questionStr in questionStrList:
             if questionStr.find("question") != -1:
                 question = json.loads(questionStr)
-                questionTitle = question.get("data").get("question").get("name").strip()
-                jsonData = questionTitle
+                questionTitle = question.get("data").get("question").get("name")
+                jsonData = re.sub(re.compile("\n"), "\\n", questionTitle) + "<|>"
+                jsonData = repr(jsonData)
             else:
                 answerStr = ""
                 answers = json.loads(questionStr)
@@ -485,7 +487,7 @@ def getGenerateQuesAndAnsToTextGeneral(questionFilterFile, questionStrList):
 
                 # 填入全局字典dictQuestionAndAnswer，格式{str:list}，list中存放选项和答案，分别为list[0]和list[1]
                 if len(listAns) == 0:
-                    listAns.append(answerStr.strip())
+                    listAns.append(answerStr)
                 else:
                     Log("listAns isn't empty!!!")
 
@@ -495,11 +497,13 @@ def getGenerateQuesAndAnsToTextGeneral(questionFilterFile, questionStrList):
                     gl_dictQuesAns[questionTitle] = listAns
                 listAns = []    # 不能用list.clear()，只能用[]，详情请百度list.clear()和list = []的区别
 
-                jsonData = answerStr.strip() + "\n"
+                answerStr = re.sub(re.compile("\n"), "\\n", answerStr)
+                answerStr = repr(answerStr)
+                jsonData = answerStr + '\n'
 
             gl_quesAndAnsAllLineNum += 1
 
-            fw.write(jsonData)
+            fw.write(jsonData.strip("'"))
  
     try:
         os.remove(questionFilterFile)
@@ -519,6 +523,8 @@ def getFileDistinctGeneral():
 
     curr_time = datetime.datetime.now()
     timestamp = datetime.datetime.strftime(curr_time, '%Y%m%d')
+    keyTmp = ''
+    listValueTmp = ''
 
     Log("----------------题目文件生成开始----------------")
 
@@ -528,10 +534,14 @@ def getFileDistinctGeneral():
 
     with open(gl_fileDistinctOutputPath + "混合题目与答案_Distinct_" + timestamp + ".txt", "w", encoding='UTF-8', newline='') as fw:
         for key, listValue in gl_dictQuesAns.items():
-            fw.write(key + "<|>")
+            keyTmp = re.sub(re.compile("\n"), "\\n", key) + "<|>"
+            keyTmp = repr(keyTmp)
+            fw.write(keyTmp.strip("'"))
 
             if len(listValue) == 1:
-                fw.write(listValue[0] + "\n")
+                listValueTmp = re.sub(re.compile("\n"), "\\n", listValue[0])
+                listValueTmp = repr(listValueTmp)
+                fw.write(listValueTmp.strip("'") + "\n")
             else:
                 Log("gl_dictQuesAns's value is incomplete")
 
