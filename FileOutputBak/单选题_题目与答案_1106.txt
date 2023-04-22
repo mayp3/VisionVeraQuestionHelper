@@ -20212,3 +20212,4 @@ H3C交换机SWA 的端口g1/0/24 已经配置成为Trunk 端口类型。通过�
 [SWA-GigabitEthernet0/0/8]undo stp enable
 H3C交换机SWA 的端口g1/0/24 已经配置成为Trunk 端口类型。通过（）命令可以使此端口允许VLAN2 和VLAN5 通过
 [SWA-GigabitEthernet1/0/1]port trunk permit vlan 2 5
+
