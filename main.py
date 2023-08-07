@@ -34,7 +34,7 @@ gl_fileDistinctOutputPath   = os.getcwd() + "\\FileDistinctOutput\\"
 
 
 def Log(msg):
-     print('File: ' + __file__[__file__.rfind("\\")+1:] + ', [' + sys._getframe(1).f_code.co_name + '] Line '+ str(sys._getframe(1).f_lineno) + ': ' + msg)
+    print('File: ' + __file__[__file__.rfind("\\")+1:] + ', [' + sys._getframe(1).f_code.co_name + '] Line '+ str(sys._getframe(1).f_lineno) + ': ' + msg)
 
 
 def getFilterTextList():
@@ -101,10 +101,10 @@ def getFilterQuestionAnswerMatch(questionFilterFile):
         if lines[i].find("question") != -1 and lines[i].find('"isTrue":null') != -1:    # 提取题干
             question1 = lines[i]
         elif lines[i].find('"isTrue":1,"value"') != -1: # 提取答案
-            listOut.append(question1.strip().replace('\\n', '') + "\n")
+            listOut.append(question1.replace('\\n', '') + "\n")
             question1 = ""
             answer = lines[i]
-            listOut.append(answer.strip().replace('\\n', '') + "\n")
+            listOut.append(answer.replace('\\n', '') + "\n")
 
     for out in listOut:
         if out.find("question") != -1:
@@ -166,7 +166,7 @@ def getGenerateQuesAndAnsToText(questionFilterFile, questionStrList):
         for choiceStr in questionStrList:
             if choiceStr.find("question") != -1:
                 question = json.loads(choiceStr)
-                questionTitle = question.get("data").get("question").get("name").strip() + "\n"
+                questionTitle = question.get("data").get("question").get("name") + "\n"
                 answerList = question.get("data").get("question").get("answerList")
                 
                 option=['A','B','C','D','E','F','G','H']
@@ -190,8 +190,8 @@ def getGenerateQuesAndAnsToText(questionFilterFile, questionStrList):
 
                 # 填入全局字典dictQuestionAndAnswer，格式{str:list}，list中存放选项和答案，分别为list[0]和list[1]
                 if len(listChoiceOptAndAns) == 0:
-                    #listChoiceOptAndAns.append(choiceOption.strip())
-                    listChoiceOptAndAns.append(answerStr.strip())
+                    #listChoiceOptAndAns.append(choiceOption)
+                    listChoiceOptAndAns.append(answerStr)
                 else:
                     Log("listChoiceOptAndAns isn't empty!!!")
 
@@ -215,7 +215,7 @@ def getGenerateQuesAndAnsToText(questionFilterFile, questionStrList):
                         gl_dictJudge[questionTitle] = listChoiceOptAndAns
                 listChoiceOptAndAns = []    # 不能用list.clear()，只能用[]，详情请百度list.clear()和list = []的区别
 
-                jsonData = answerStr.strip() + "\n"
+                jsonData = answerStr + "\n"
 
             if questionType == 0:   #单选题
                 gl_singleQuesAndAnsAllLineNum += 1
@@ -253,14 +253,14 @@ def getSingleChoiceFileDistinct():
 
     with open(gl_fileDistinctOutputPath + "单选题_题目与答案_Distinct_" + timestamp + ".txt", "w", encoding='UTF-8', newline='') as fw:
         for key, listValue in gl_dictSingleChoice.items():
-            #if key.strip().find("题目:") != -1:
-            fw.write(key.strip() + "<|>")
+            #if key.find("题目:") != -1:
+            fw.write(key + "<|>")
             #else:
             #    Log("gl_dictSingleChoice's key no have 题目")
 
             if len(listValue) == 1:
-                fw.write(listValue[0].strip() + "\n")
-                #fw.write(listValue[1].strip() + "\n")
+                fw.write(listValue[0] + "\n")
+                #fw.write(listValue[1] + "\n")
                 fw.write("\n")
             else:
                 Log("gl_dictSingleChoice's value is incomplete")
@@ -296,14 +296,14 @@ def getMultiChoiceFileDistinct():
 
     with open(gl_fileDistinctOutputPath + "多选题_题目与答案_Distinct_" + timestamp + ".txt", "w", encoding='UTF-8', newline='') as fw:
         for key, listValue in gl_dictMultiChoice.items():
-            #if key.strip().find("题目:") != -1:
-            fw.write(key.strip() + "<|>")
+            #if key.find("题目:") != -1:
+            fw.write(key + "<|>")
             #else:
             #    Log("gl_dictMultiChoice's key no have 题目")
 
             if len(listValue) == 1:
-                fw.write(listValue[0].strip() + "\n")
-                #fw.write(listValue[1].strip() + "\n")
+                fw.write(listValue[0] + "\n")
+                #fw.write(listValue[1] + "\n")
                 fw.write("\n")
             else:
                 Log("gl_dictMultiChoice's value is incomplete")
@@ -338,14 +338,14 @@ def getJudgeFileDistinct():
 
     with open(gl_fileDistinctOutputPath + "判断题_题目与答案_Distinct_" + timestamp + ".txt", "w", encoding='UTF-8', newline='') as fw:
         for key, listValue in gl_dictJudge.items():
-            #if key.strip().find("题目:") != -1:
-            fw.write(key.strip() + "<|>")
+            #if key.find("题目:") != -1:
+            fw.write(key + "<|>")
             #else:
             #    Log("gl_dictJudge's key no have 题目")
 
             if len(listValue) == 1:
-                fw.write(listValue[0].strip() + "\n")
-                #fw.write(listValue[1].strip() + "\n")
+                fw.write(listValue[0] + "\n")
+                #fw.write(listValue[1] + "\n")
                 fw.write("\n")
             else:
                 Log("gl_dictJudge's value is incomplete")
