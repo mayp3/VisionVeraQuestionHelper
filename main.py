@@ -150,7 +150,7 @@ def getFilterQuestionAnswerMatch():
                         if outputFilter.find('"code":200,"msg":"成功"') != -1:
                             fw.write(outputFilter)
 
-        shutil.move(gl_fileInputPath + inputFileName, gl_fileInputBakPath + inputFileName)  # 将输入文件移动到输入备份路径
+        # shutil.move(gl_fileInputPath + inputFileName, gl_fileInputBakPath + inputFileName)  # 将输入文件移动到输入备份路径
 
         getGenerateQuesAndAnsToText(outputFilterFileName, outputFilterlist)
 
